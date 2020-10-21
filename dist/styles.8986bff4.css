@@ -32,6 +32,16 @@ h1 {
     font-family: frijole;
     font-size: 7vw;
 }
+blockquote{
+    font-size: 20px;
+    font-style: italic;
+    color:#7e7d7d;
+}
+blockquote a {
+    margin-left: 15px;
+    font-weight: 400;
+
+}
 
 /* general table setting */
 
@@ -103,6 +113,7 @@ nav h1 {
 img{
     cursor:pointer; 
     width: 80vw;
+    max-width: 500px;
 }
 
 figure {

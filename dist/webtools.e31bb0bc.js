@@ -118,10 +118,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-// External icon after external link class external
+var Books = [{
+  title: "Fight Club",
+  year: 1996
+}]; // External icon after external link class external
+
 var externalLink = document.getElementsByClassName("external");
 
 for (var x = 0; x < externalLink.length; x++) {
+  externalLink[x].setAttribute("target", "_blank");
   externalLink[x].insertAdjacentHTML("beforeend", " <i class='fas fa-external-link-alt'></i>");
 } // Copyright date
 
@@ -142,19 +147,23 @@ for (var _x = 0; _x < imageArray.length; _x++) {
 } // adult content display
 
 
-var adultUnlocker = document.getElementById("Unlock");
-var hiddenContent = document.getElementById("hidden");
-var adultChecker = document.getElementById("adult");
-adultUnlocker.addEventListener("click", function () {
-  var age = document.getElementById("age").value;
+if (document.getElementById("Unlock")) {
+  var adultUnlocker = document.getElementById("Unlock");
+  var hiddenContent = document.getElementById("hidden");
+  var adultChecker = document.getElementById("adult");
+  adultUnlocker.addEventListener("click", function () {
+    var age = document.getElementById("age").value;
 
-  if (age >= 18) {
-    hiddenContent.classList.toggle("hidden");
-    adultChecker.classList.toggle("hidden");
-  } else {
-    adultChecker.innerHTML = "<p><strong>Sorry. You are not allowed to see this content</strong></p>";
-  }
-});
+    if (age >= 18) {
+      hiddenContent.classList.toggle("hidden");
+      adultChecker.classList.toggle("hidden");
+    } else {
+      adultChecker.innerHTML = "<p><strong>Sorry. You are not allowed to see this content</strong></p>";
+    }
+  });
+}
+
+; //list of books
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -183,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38419" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33495" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
