@@ -1,4 +1,7 @@
 /* Mobile version: */
+*{
+    font-family: roboto;
+}
 
 /* General */
 body{
@@ -24,6 +27,10 @@ main {
 }
 cite{
     font-weight: 800;
+}
+h1 {
+    font-family: frijole;
+    font-size: 7vw;
 }
 
 /* general table setting */
@@ -60,7 +67,7 @@ nav p {
 nav h1 {
     color:#C0BBFF;
     margin:auto;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 #nav-options {
     background-color: #f4f3f1;
