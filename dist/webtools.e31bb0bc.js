@@ -118,11 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-var Books = [{
-  title: "Fight Club",
-  year: 1996
-}]; // External icon after external link class external
-
+// External icon after external link class external
 var externalLink = document.getElementsByClassName("external");
 
 for (var x = 0; x < externalLink.length; x++) {
@@ -164,6 +160,25 @@ if (document.getElementById("Unlock")) {
 }
 
 ; //list of books
+
+var booksList = [{
+  title: "Fight Club",
+  imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
+  year: 1996
+}, {
+  title: "Survivor",
+  imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
+  year: 1999
+}];
+var bookDisplay = document.getElementById("bookDisplay"); // for(x=0; x<booksList.length; x++){
+//   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
+// }
+
+booksList.forEach(displayBook);
+
+function displayBook(book) {
+  bookDisplay.insertAdjacentHTML("beforeend", "\n    \n    <figure>\n      <img src=\"".concat(book.imgURL, "\">\n      <figcaption></figcaption>\n    </figure>\n    \n    \n    "));
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -192,7 +207,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33495" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37125" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

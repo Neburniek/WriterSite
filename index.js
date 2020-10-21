@@ -1,11 +1,3 @@
-const Books = [
-{title: "Fight Club",
-  year: 1996,
-
-}
-
-
-]
 
 
 
@@ -53,5 +45,34 @@ if(document.getElementById("Unlock")){
 
 //list of books
 
+const booksList = [
+  {title: "Fight Club",
+    imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
+    year: 1996,
+  
+  }, {title:"Survivor",
+      imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
+      year: 1999}
+  
+  
+  ]
+  
+  const bookDisplay= document.getElementById("bookDisplay");
+  // for(x=0; x<booksList.length; x++){
+  //   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
+  // }
+  booksList.forEach(displayBook);
 
+  function displayBook(book){
+    bookDisplay.insertAdjacentHTML("beforeend",`
+    
+    <figure>
+      <img src="${book.imgURL}">
+      <figcaption></figcaption>
+    </figure>
+    
+    
+    `)
+
+  }
 
