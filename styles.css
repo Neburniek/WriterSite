@@ -15,6 +15,12 @@ a:hover{
 main {
     padding: 5vw;
 }
+.mybutton{
+  background-color: #C0BBFF;
+  padding:5px;
+  border-radius: 10%;
+
+}
 
 /* general table setting */
 
@@ -104,7 +110,10 @@ figcaption{
     text-align: center;
 }
 
-/* index.html */
+/* Adult Content*/
+.hidden{
+    display:none;
+}
 
 /* footer */
 footer{
@@ -112,12 +121,23 @@ footer{
     color:#C0BBFF;
     padding:6vw 6vw 10vw 6vw;
 }
+footer ul {
+    list-style: none;
+}
+footer ul li a{
+    color: #C0BBFF;
+}
 #goUp{
     position:relative;
     float:right;
     bottom: 50px;
     right:20px;
     font-size: 10vw;
+}
+
+/* form */
+label input{
+    margin:10px;
 }
 
 

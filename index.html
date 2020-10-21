@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck Palahniuk Fan site</title>
+    <title>Chuck Palahniuk Fan site: main</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
     <body id="index">
@@ -17,7 +17,7 @@
             </section>
             <section id="nav-options">
                 <ul>
-                    <li><a href="#">Personal life</a></li>
+                    <li><a href="./personalLife.html">Personal life</a></li>
                     <li><a href="#">Books</a></li>
                     <li><a href="#">Graphic Novels</a></li>
                 </ul>
@@ -76,19 +76,65 @@
             <p>I must be cruel only to be kind.  My brother Jaques he keeps at school, and report speaks goldenly of his profit.  I think he be transform'd into a beast; For I can nowhere find him like a man. I'll graff it with you, and then I shall graff it with a medlar. Then it will be the earliest fruit i' th' country; for you'll be rotten ere you be half ripe, and that's the right virtue of the medlar. Here comes my sister, reading; stand aside.</p>
             <p>At one fell swoop  that's neither here nor there.  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>
         </section>
-        <section>
-            <h3>Public Interview</h3>
-            <figure>
+        <section id="adult">
+            <h3>Adult Content (+18)</h3>
+            <form>
+                <p>This contain adult content. Tell us when you were born to unlock this content.</p>
+                <fieldset>
+                    <legend>Age</legend>
+                         <label for="age">How old are you?</label>
+						<br>
+                        <input type="number" id="age" name="age" placeholder="Must be a number">
+                        <input id="Unlock" class="mybutton" type="button" value="Unlock Content">
+                </fieldset>
+            </form>
+        </section>
+        <section id="hidden" class="hidden">
+            <h3>Joe Rogan Podcast</h3>
+            <figure >
                  <iframe src="https://www.youtube.com/embed/cvPQjL4wDIY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                 <figcaption>Best momments of "The Joe Rogan Experience Podcast"</figcaption>
+                 <figcaption>Joe Rogan best momments podcast</figcaption>
             </figure>
            
+        </section>
+        <section >
+            <h3>Chuck Palahniuk interview</h3>
+            <figure >
+                 <iframe src="https://www.youtube.com/embed/s-Uv9tL2af4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <figcaption>Interview of Chuck Palahniuk in Connan O'Brian show</figcaption>
+            </figure>
+           
+        </section>
+        <section>
+            <h3>Join our Newsletter</h3>
+            <form action="#">
+                <p>Join our Newsletter and we will inform you every time we upload new content!</p>
+                <fieldset>
+                    <legend>Newsletter Subscribe</legend>
+                    <label for="name">Name: <input type="text" title="Only allowed A-z, À-ÿ ' - " id="name" name="name" maxlength="64" minlength="2" pattern="[A-Za-zÀ-ÿ'\s-]{2,64}" required=""></label>
+                    <br>
+                    <label for="familyname">Surname: <input type="text" title="Only Allowed A-z, À-ÿ ' - " id="familyname" name="familyname" maxlength="180" minlength="2" pattern="[A-Za-zÀ-ÿ'\s-]{2,180}" required=""></label>
+                    <br>
+                    <label for="Email">Email: <input type="email" id="email" name="email" required=""></label>
+                    <br>
+                    <input type="checkbox"  name="privacy" value="privacy" required=""> I accept the conditions of the <a href="">privacy policy</a></label>
+			        <p><button type="submit" class="mybutton">Subscribe me</button></p>
+                </fieldset>
+            </form>
         </section>
         
 
     </main>
     <footer>
-        <p><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</p><a href="#title"><i id="goUp" class="fas fa-arrow-up"></i></a>
+        <ul>
+            <li><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</li>
+            <li><a href="">Privacy Policy</a></li>
+        </ul>
+
+        
+        
+        
+        <a href="#title"><i id="goUp" class="fas fa-arrow-up"></i></a>
     </footer>
 
     <script src="./index.js"></script>
