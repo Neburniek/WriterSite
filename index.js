@@ -1,4 +1,4 @@
-// External logo after external link class external
+// External icon after external link class external
 
 const externalLink = document.getElementsByClassName("external");
 for(let x=0; x<externalLink.length; x++){
@@ -18,6 +18,8 @@ for(let x=0; x < imageArray.length; x++){
         })
         
 }
+
+// adult content display
 
 const adultUnlocker= document.getElementById("Unlock");
 const hiddenContent= document.getElementById("hidden");

@@ -19,7 +19,11 @@ main {
   background-color: #C0BBFF;
   padding:5px;
   border-radius: 10%;
+  margin-top: 10px;
 
+}
+cite{
+    font-weight: 800;
 }
 
 /* general table setting */
@@ -77,6 +81,11 @@ nav h1 {
 }
 #nav-options ul li a:hover{
     color:#376b3d;
+    
+}
+#nav-options .here{
+    color:#376b3d;
+    cursor:default;
 }
 #title{
     padding:3vw;
@@ -85,23 +94,24 @@ nav h1 {
 
 /* images: */
 img{
-    cursor:pointer;
+    cursor:pointer; 
+    width: 80vw;
 }
+
 figure {
     margin:0;
+    text-align: center;
 }
 .image-circle{
-    max-width: 40vw;
     border-radius: 50%;
 }
 figcaption{
     font-size:2vw;
-    line-height: 5px;
+    line-height: 15px;
 }
 .imageSelected{
     border-radius: 0%;
-    position:relative;
-    max-width:100%;
+    width:90vw;
     border:5px solid #433D86;
 }
 
@@ -117,6 +127,7 @@ figcaption{
 
 /* footer */
 footer{
+    font-size: 12px;
     background-color:#000;
     color:#C0BBFF;
     padding:6vw 6vw 10vw 6vw;
@@ -134,10 +145,23 @@ footer ul li a{
     right:20px;
     font-size: 10vw;
 }
+p{
+    text-align: justify;
+}
 
 /* form */
 label input{
     margin:10px;
 }
 
+/* index */
 
+#index img{
+    width:40vw;
+}
+
+#index .imageSelected{
+    border-radius: 0%;
+    width:90vw;
+    border:5px solid #433D86;
+}
