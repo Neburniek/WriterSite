@@ -118,8 +118,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-//list of books
-var booksList = [{
+// Header creation
+var bodyTag = document.getElementsByTagName("body");
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <section id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1> <span>C</span>huck  <span>P</span>alahniuk</h1>\n                </a>\n            </section>\n            <section id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./graphicNovels.html\">Non-fiction books</a></li>\n                </ul>\n            </section>\n        </nav> \n    </header>\n    \n\n");
+var h2Tag = document.getElementsByTagName("h2");
+var personalLife = document.getElementById("personalLife");
+var fictionBooks = document.getElementById("fictionBooks");
+var nonFiction = document.getElementById("nonFiction");
+
+if (h2Tag[0].textContent === "Personal Life") {
+  personalLife.classList.add("here");
+} else if (h2Tag[0].textContent === "Fiction Books") {
+  fictionBooks.classList.add("here");
+} else if (h2Tag[0].textContent === "Non-Fiction Books") {
+  nonFiction.classList.add("here");
+} // footer creation
+
+
+var mainTag = document.getElementsByTagName("main");
+mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); //list of ficcion books
+
+var ficcionBookList = [{
   title: "Fight Club",
   imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
   imgAuthor: "K嘛 / Flickr",
@@ -211,32 +230,124 @@ var booksList = [{
   alt: "Books in a Library, one of them is "
 }, {
   title: "Tell All",
-  imgURL: "https://live.staticflickr.com/4025/4581958687_4f76fc9338_b.jpg",
-  imgAuthor: "I am R. / Flickr",
-  imgLink: "https://www.flickr.com/photos/isfullofcrap/4581958687/",
-  imgLicense: "(CC BY 2.0)",
-  imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+  imgURL: "https://live.staticflickr.com/6183/6066435840_5fff40da8a_z.jpg",
+  imgAuthor: "federico novaro / Flickr",
+  imgLink: "https://www.flickr.com/photos/federiconovaro/6066435840",
+  imgLicense: "(CC BY-NC-SA 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-sa/2.0/",
   year: 2010,
-  alt: "Houston Galleria Border's, book "
+  alt: "Rodrigo Corral version of the book cover of "
 }, {
   title: "Damned",
-  imgURL: "",
-  imgAuthor: "",
-  imgLink: "",
-  imgLicense: "",
-  imgLicenseURL: "",
-  year: "",
-  alt: ""
+  imgURL: "https://live.staticflickr.com/6093/6307632498_99d2da7858_b.jpg",
+  imgAuthor: "Neil R / Flickr",
+  imgLink: "https://www.flickr.com/photos/islespunkfan/6307632498/in/photostream/",
+  imgLicense: "(CC BY-NC 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+  year: 2011,
+  alt: "Book signed by Chuck Palahniuk, "
 }, {
-  title: "",
-  imgURL: "",
-  imgAuthor: "",
-  imgLink: "",
-  imgLicense: "",
-  imgLicenseURL: "",
-  year: "",
-  alt: ""
-}]; // for(let x=0; x<booksList.length; x++ ){
+  title: "Doomed",
+  imgURL: "https://live.staticflickr.com/3736/10581759016_5af50e956f_z.jpg",
+  imgAuthor: "Pesky Librarians / Flickr",
+  imgLink: "https://www.flickr.com/photos/peskylibrary/10581759016/in/photolist-guNF4C-h85hhY",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2013,
+  alt: "Books in a library, between them is "
+}, {
+  title: "Burnt Tongues",
+  imgURL: "https://live.staticflickr.com/2372/1716382953_65647762bf_z.jpg",
+  imgAuthor: "Adams K. / Flickr",
+  imgLink: "https://www.flickr.com/photos/adamskev/1716382953/",
+  imgLicense: "(CC BY-NC 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+  year: 2014,
+  alt: "Books arround broken Tv,  "
+}, {
+  title: "Beautiful You",
+  imgURL: "https://live.staticflickr.com/5219/5384227790_204867f061_z.jpg",
+  imgAuthor: "Platform",
+  imgLink: "https://www.flickr.com/photos/ouplatform/5384227790/in/photolist-9cMzkC-b44RyH",
+  imgLicense: "(CC BY-NC 2.0) ",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+  year: 2014,
+  alt: "Books on a Shelf, "
+}, {
+  title: "Make Something up",
+  imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+  imgAuthor: "jana. / Flickr",
+  imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2015,
+  alt: "Palahniuk Books, "
+}, {
+  title: "Fight Club 2",
+  imgURL: "https://live.staticflickr.com/7153/6624162303_832a483579_z.jpg",
+  imgAuthor: "Scott Ellis / Flickr",
+  imgLink: "https://www.flickr.com/photos/vsellis/6624162303/",
+  imgLicense: "(CC BY-SA 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
+  year: 2016,
+  alt: "Soap pills representing Fight Club, "
+}, {
+  title: "Bait",
+  imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+  imgAuthor: "jana. / Flickr",
+  imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2016,
+  alt: "Palahniuk Books, "
+}, {
+  title: "Legacy",
+  imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+  imgAuthor: "jana. / Flickr",
+  imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2017,
+  alt: "Palahniuk Books, "
+}, {
+  title: "Adjustment Day",
+  imgURL: "https://live.staticflickr.com/978/40975530065_ea04998cc0_z.jpg",
+  imgAuthor: "Pesky Librarians / flickr",
+  imgLink: "https://www.flickr.com/photos/peskylibrary/40975530065/",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2018,
+  alt: "Books in library, one of them is "
+}, {
+  title: "Fight Club 3",
+  imageURL: "https://live.staticflickr.com/2598/13145428175_181da360b9_z.jpg",
+  imgAuthor: "Jessica Pereira / Flickr",
+  imgLink: "https://www.flickr.com/photos/pejess/13145428175/",
+  imgLicense: "(CC BY 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+  year: 2018,
+  alt: "Draw of Tyler Durden from fight club 1, "
+}, {
+  title: "The invention of Sound",
+  imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+  imgAuthor: "jana. / Flickr",
+  imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2017,
+  alt: "Palahniuk Books, "
+}]; // ,
+//     {
+//       title: "",
+//       imgURL: "",
+//       imgAuthor: "",
+//       imgLink: "",
+//       imgLicense: "",
+//       imgLicenseURL: "",
+//       year: "",
+//       alt: "",
+//     }
+// for(let x=0; x<booksList.length; x++ ){
 //   if(booksList[x].title=== "Rant"){
 //     console.log(booksList[x])
 //   }
@@ -247,7 +358,7 @@ if (document.getElementById("bookDisplay")) {
   //   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
   // }
 
-  booksList.forEach(displayBook);
+  ficcionBookList.forEach(displayBook);
 
   function displayBook(book) {
     bookDisplay.insertAdjacentHTML("beforeend", "\n    \n    <div>\n   \n       <figure> \n       <a href=\"".concat(book.title.split(' ').join('_'), ".html\">\n       <h4>").concat(book.title, "</h4>\n       <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n       </a>\n       <figcaption>\n       Book publication year: ").concat(book.year, "\n       <strong>Image Source: </strong> \n       <a class=\"external\" href=\"").concat(book.imgLink, "\">\n        ").concat(book.imgAuthor, "\n       </a>\n       <strong>License:</strong>\n       <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n       ").concat(book.imgLicense, "\n       </a>\n       </figcaption>\n      </figure>\n    </div>\n    \n    \n    "));
@@ -324,7 +435,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35213" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41251" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

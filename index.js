@@ -1,10 +1,65 @@
+// Header creation
+const bodyTag = document.getElementsByTagName("body");
+bodyTag[0].insertAdjacentHTML("afterbegin",`
+<header>
+        <nav>
+            <section id="title">
+                <a href="./index.html">
+                    <p>Fan site of</p>
+                    <h1> <span>C</span>huck  <span>P</span>alahniuk</h1>
+                </a>
+            </section>
+            <section id="nav-options">
+                <ul>
+                    <li><a id="personalLife" href="./personalLife.html">Personal life</a></li>
+                    <li><a id="fictionBooks" href="./fictionBooks.html">Fiction books</a></li>
+                    <li><a id="nonFiction" href="./graphicNovels.html">Non-fiction books</a></li>
+                </ul>
+            </section>
+        </nav> 
+    </header>
+    
+
+`);
+
+const h2Tag = document.getElementsByTagName("h2");
+const personalLife= document.getElementById("personalLife");
+const fictionBooks = document.getElementById("fictionBooks");
+const nonFiction = document.getElementById("nonFiction");
+
+if(h2Tag[0].textContent === "Personal Life"){
+  personalLife.classList.add("here");
+}else if(h2Tag[0].textContent === "Fiction Books"){
+  fictionBooks.classList.add("here");
+}else if(h2Tag[0].textContent === "Non-Fiction Books"){
+  nonFiction.classList.add("here");
+}
+
+// footer creation
+const mainTag = document.getElementsByTagName("main");
+
+mainTag[0].insertAdjacentHTML("afterend",`
+<footer>
+<ul>
+    <li><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</li>
+    <li><a href="./privacy.html">Privacy Policy</a></li>
+</ul>
 
 
-//list of books
+
+
+<a href="#title"><i id="goUp" class="fas fa-arrow-up"></i></a>
+</footer>
+
+`);
 
 
 
-const booksList = [
+//list of ficcion books
+
+
+
+const ficcionBookList = [
   { title: "Fight Club",
     imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
     imgAuthor: "K嘛 / Flickr",
@@ -110,38 +165,142 @@ const booksList = [
       },
       {
         title: "Tell All",
-        imgURL: "https://live.staticflickr.com/4025/4581958687_4f76fc9338_b.jpg",
-        imgAuthor: "I am R. / Flickr",
-        imgLink: "https://www.flickr.com/photos/isfullofcrap/4581958687/",
-        imgLicense: "(CC BY 2.0)",
-        imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+        imgURL: "https://live.staticflickr.com/6183/6066435840_5fff40da8a_z.jpg",
+        imgAuthor: "federico novaro / Flickr",
+        imgLink: "https://www.flickr.com/photos/federiconovaro/6066435840",
+        imgLicense: "(CC BY-NC-SA 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-sa/2.0/",
         year: 2010,
-        alt: "Houston Galleria Border's, book ",
+        alt: "Rodrigo Corral version of the book cover of ",
       },
       {
         title: "Damned",
-        imgURL: "",
-        imgAuthor: "",
-        imgLink: "",
-        imgLicense: "",
-        imgLicenseURL: "",
-        year: "",
-        alt: "",
+        imgURL: "https://live.staticflickr.com/6093/6307632498_99d2da7858_b.jpg",
+        imgAuthor: "Neil R / Flickr",
+        imgLink: "https://www.flickr.com/photos/islespunkfan/6307632498/in/photostream/",
+        imgLicense: "(CC BY-NC 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+        year: 2011,
+        alt: "Book signed by Chuck Palahniuk, ",
       },
       {
-        title: "",
-        imgURL: "",
-        imgAuthor: "",
-        imgLink: "",
-        imgLicense: "",
-        imgLicenseURL: "",
-        year: "",
-        alt: "",
-      }
+        title: "Doomed",
+        imgURL: "https://live.staticflickr.com/3736/10581759016_5af50e956f_z.jpg",
+        imgAuthor: "Pesky Librarians / Flickr",
+        imgLink: "https://www.flickr.com/photos/peskylibrary/10581759016/in/photolist-guNF4C-h85hhY",
+        imgLicense: "(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2013,
+        alt: "Books in a library, between them is ",
+      },
+      {
+        title: "Burnt Tongues",
+        imgURL: "https://live.staticflickr.com/2372/1716382953_65647762bf_z.jpg",
+        imgAuthor: "Adams K. / Flickr",
+        imgLink: "https://www.flickr.com/photos/adamskev/1716382953/",
+        imgLicense: "(CC BY-NC 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+        year: 2014,
+        alt: "Books arround broken Tv,  ",
+      },
+      {
+        title: "Beautiful You",
+        imgURL: "https://live.staticflickr.com/5219/5384227790_204867f061_z.jpg",
+        imgAuthor: "Platform",
+        imgLink: "https://www.flickr.com/photos/ouplatform/5384227790/in/photolist-9cMzkC-b44RyH",
+        imgLicense: "(CC BY-NC 2.0) ",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+        year: 2014,
+        alt: "Books on a Shelf, ",
+      },
+
+      {
+        title: "Make Something up",
+        imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+        imgAuthor: "jana. / Flickr",
+        imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+        imgLicense:"(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2015,
+        alt: "Palahniuk Books, "
+      },
+      {
+        title: "Fight Club 2",
+        imgURL: "https://live.staticflickr.com/7153/6624162303_832a483579_z.jpg",
+        imgAuthor: "Scott Ellis / Flickr",
+        imgLink: "https://www.flickr.com/photos/vsellis/6624162303/",
+        imgLicense: "(CC BY-SA 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
+        year: 2016,
+        alt: "Soap pills representing Fight Club, ",
+      },
+      {
+        title: "Bait",
+        imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+        imgAuthor: "jana. / Flickr",
+        imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+        imgLicense:"(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2016,
+        alt: "Palahniuk Books, "
+      },
+      {
+        title: "Legacy",
+        imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+        imgAuthor: "jana. / Flickr",
+        imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+        imgLicense:"(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2017,
+        alt: "Palahniuk Books, "
+      },
+      {
+        title: "Adjustment Day",
+        imgURL: "https://live.staticflickr.com/978/40975530065_ea04998cc0_z.jpg",
+        imgAuthor: "Pesky Librarians / flickr",
+        imgLink: "https://www.flickr.com/photos/peskylibrary/40975530065/",
+        imgLicense: "(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2018,
+        alt: "Books in library, one of them is ",
+      },
+      {
+        title: "Fight Club 3",
+        imageURL: "https://live.staticflickr.com/2598/13145428175_181da360b9_z.jpg",
+        imgAuthor: "Jessica Pereira / Flickr",
+        imgLink: "https://www.flickr.com/photos/pejess/13145428175/",
+        imgLicense: "(CC BY 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+        year: 2018,
+        alt: "Draw of Tyler Durden from fight club 1, ",
+      },
+      {
+        title: "The invention of Sound",
+        imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
+        imgAuthor: "jana. / Flickr",
+        imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
+        imgLicense:"(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2017,
+        alt: "Palahniuk Books, "
+      },
+  
   
   
   
   ]
+
+  // ,
+  //     {
+  //       title: "",
+  //       imgURL: "",
+  //       imgAuthor: "",
+  //       imgLink: "",
+  //       imgLicense: "",
+  //       imgLicenseURL: "",
+  //       year: "",
+  //       alt: "",
+  //     }
 
   // for(let x=0; x<booksList.length; x++ ){
   //   if(booksList[x].title=== "Rant"){
@@ -154,7 +313,7 @@ const booksList = [
   // for(x=0; x<booksList.length; x++){
   //   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
   // }
-  booksList.forEach(displayBook);
+  ficcionBookList.forEach(displayBook);
 
   function displayBook(book){
     bookDisplay.insertAdjacentHTML("beforeend",`
