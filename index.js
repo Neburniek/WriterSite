@@ -1,6 +1,7 @@
 
 
 //list of books
+if(document.getElementById("bookDisplay")){
 
 
 const booksList = [
@@ -55,7 +56,8 @@ const booksList = [
 
   }
 
-
+  
+}
 // External icon after external link class external
 
 const externalLink = document.getElementsByClassName("external");
