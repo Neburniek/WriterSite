@@ -1,3 +1,10 @@
+// main title change
+const mainTitle= document.getElementById("mainTitle");
+const h2Tag = document.getElementsByTagName("h2");
+// mainTitle.textContent=h2Tag[0].textContent;
+
+
+
 // Header creation
 
 const bodyTag = document.getElementsByTagName("body");
@@ -7,7 +14,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             <section id="title">
                 <a href="./index.html">
                     <p>Fan site of</p>
-                    <h1> <span>C</span>huck  <span>P</span>alahniuk</h1>
+                    <h1>Chuck Palahniuk</h1>
                 </a>
             </section>
             <section id="nav-options">
@@ -27,7 +34,6 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
 
 if(document.getElementsByTagName("h2")){
   
-const h2Tag = document.getElementsByTagName("h2");
 const personalLife= document.getElementById("personalLife");
 const fictionBooks = document.getElementById("fictionBooks");
 const nonFiction = document.getElementById("nonFiction");
@@ -90,6 +96,10 @@ const fictionBookList = [
       imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
       year: 1999,
       alt: "Alternative Book Cover designed by a fan of the book ",
+      quote: 'A girl calls and asks, "Does it hurt very much to die?"Well, sweetheart," I tell her, "yes, but it hurts a lot more to keep living.',
+      videoURL: "https://www.youtube.com/embed/mAdjnwPLikw",
+      videoTitle: "Book review of Survivor",
+      videoCaption: "Book review of Survivor by Charley Cook"
     },
 
       {
@@ -100,7 +110,11 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
         year: 1999,
-        alt: "Alternative Book Cover designed by a fan of the book "
+        alt: "Alternative Book Cover designed by a fan of the book ",
+        videoURL: "https://www.youtube.com/embed/YacX2h1zfEU",
+        videoTitle: "Invisible Monsters Review",
+        videoCaption: "Invisible Monsters Review by Shane's Reviews",
+        quote: "Your past is just a story. And once you realise this, it has no power over you"
       },
 
       {
@@ -111,7 +125,11 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
         year: 2001,
-        alt: "Alternative Book Cover designed by a fan of the book "
+        alt: "Alternative Book Cover designed by a fan of the book ",
+        quote: "We can spend our lives letting the world tell us who we are. Sane or insane. Saints or sex addicts. Heroes or victims. Letting history tell us how good or bad we are. Letting our past decide our future. Or we can decide for ourselves. And maybe it's our job to invent something better",
+        videoURL: "https://www.youtube.com/embed/qkIEuWIk4v4",
+        videoTitle: "Chuck Palahniuk Interview",
+        videoCaption: "How Choke was originated"
       },
 
       {
@@ -122,7 +140,12 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
         year: 2002,
-        alt: "Alternative Book Cover designed by a fan of the book "
+        alt: "Alternative Book Cover designed by a fan of the book ",
+        quote: "In a world where vows are worthless.Where making a pledge means nothing. Where promises are made to be broken, it would be nice to see words come back into power.",
+        videoURL: "https://www.youtube.com/embed/MJVwZjwva-c",
+        videoTitle: "Lullaby Book Review",
+        videoCaption: "Lullaby book review by Stepyyisms"
+
       },
 
       {
@@ -133,7 +156,11 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC-ND 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2003,
-        alt: "Palahniuk Books, between them, "
+        alt: "Palahniuk Books, between them, ",
+        quote: "We all die. The goal isn't to live forever, the goal is to create something that will.",
+        videoURL: "https://www.youtube.com/embed/8sWTCjIVQQE",
+        videoTitle: "Book review of Diary",
+        videoCaption: "Book review of Diary by Climb The Stacks"
       },
 
       {
@@ -144,7 +171,11 @@ const fictionBookList = [
         imgLicense:"(CC BY-SA 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
         year: 2005,
-        alt: "Person holding the book "
+        alt: "Person holding the book ",
+        quote: "The world will always punish the few people with special talents the rest of us don’t recognize as real.",
+        videoURL:"https://www.youtube.com/embed/7OJu1rRndBk",
+        videoTitle: "Book review of Haunted",
+        videoCaption: "Book review of Haunted by Philip Lanz"
       },
       {
         title: "Rant",
@@ -155,6 +186,10 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
         year: 2007,
         alt: "Book cover Signed by Chuck Palahniuk, ",
+        quote: "Life's greatest comfort is being able to look over your shoulder and see people worse off, waiting in line behind you.",
+        videoURL: "https://www.youtube.com/embed/OZlaptLnrJ0",
+        videoTitle: "Book review of Rant",
+        videoCaption:" Book review of rant by The Story Magpie"
       },
       {
         title: "Snuff",
@@ -165,6 +200,8 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2008,
         alt: "book cover signed by Chuck Palahniuk, ",
+        quote: "It can only take a moment to waste the rest of your life.",
+        
       },
       {
         title: "Pygmy",
@@ -174,7 +211,9 @@ const fictionBookList = [
         imgLicense: "(CC BY-NC-ND 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2009,
-        alt: "Books in a Library, one of them is ",
+        alt: "Books in a Library, one of them is the book",
+        quote: "According lecture, entire effort United States to incite desire, inflict want, inspire demand.",
+
       },
       {
         title: "Tell All",
@@ -184,7 +223,12 @@ const fictionBookList = [
         imgLicense: "(CC BY-NC-SA 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-sa/2.0/",
         year: 2010,
-        alt: "Rodrigo Corral version of the book cover of ",
+        alt: "Rodrigo Corral cover version of the book  ",
+        quote: "I disconnect the telephone to keep the outside world in it's correct place",
+        videoURL: "https://www.youtube.com/embed/iuboXWN0F10",
+        videoTitle: "Tell all event",
+        videoCaption: "Tell All event with Chuck Palahniuk"
+
       },
       {
         title: "Damned",
@@ -228,7 +272,7 @@ const fictionBookList = [
       },
 
       {
-        title: "Make Something up",
+        title: "Make Something Up",
         imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
@@ -279,16 +323,16 @@ const fictionBookList = [
       },
       {
         title: "Fight Club 3",
-        imageURL: "https://live.staticflickr.com/2598/13145428175_181da360b9_z.jpg",
-        imgAuthor: "Jessica Pereira / Flickr",
-        imgLink: "https://www.flickr.com/photos/pejess/13145428175/",
-        imgLicense: "(CC BY 2.0)",
-        imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
-        year: 2018,
-        alt: "Draw of Tyler Durden from fight club 1, ",
+        imgURL: "https://live.staticflickr.com/7153/6624162303_832a483579_z.jpg",
+        imgAuthor: "Scott Ellis / Flickr",
+        imgLink: "https://www.flickr.com/photos/vsellis/6624162303/",
+        imgLicense: "(CC BY-SA 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
+        year: 2016,
+        alt: "Soap pills representing Fight Club, ",
       },
       {
-        title: "The invention of Sound",
+        title: "The Invention of Sound",
         imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
@@ -407,6 +451,8 @@ function displayBook(book){
 function detailBook(bookList, bookSelector){
   const selectedBook = document.getElementsByTagName("h2");
   const bookDisplay= document.getElementById(bookSelector);
+  const footerTag = document.getElementsByTagName("footer");
+
   for(let x= 0; x<bookList.length; x++){
     if(selectedBook[0].textContent=== bookList[x].title){
       const book = bookList[x];
@@ -464,9 +510,30 @@ function detailBook(bookList, bookSelector){
           <figure>
         
         `);
+
+
       }
 
+
+      if(x=== 0){
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="previous"> <p>No previous books</p></div>`)
+      }else{
+       const previousBook=  bookList[x-1];
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="previous"> <a href="${previousBook.title.split(' ').join('_')}.html"><p>${previousBook.title}</p> </a></div>`)
+
+  
+      }
+
+      if(x === bookList.length - 1){
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <p>No new books</p></div>`)
+
+      }else{
+        const nextBook=  bookList[x+1];
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <a href="${nextBook.title.split(' ').join('_')}.html"><p>${nextBook.title}</p> </a></div>`)
+
+      }
 
     }
   }
 }
+
