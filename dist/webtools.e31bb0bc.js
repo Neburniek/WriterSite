@@ -149,7 +149,11 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC-ND 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 1996,
-  alt: "Alternative Book Cover designed by a fan of the book "
+  alt: "Alternative Book Cover designed by a fan of the book ",
+  quote: "The things you used to own, now they own you.",
+  videoURL: "https://www.youtube.com/embed/GCuSDH-YEKI",
+  videoTitle: "Poscast Joe Rogan about fight club",
+  videoCaption: "Poscast Joe Rogan about fight club"
 }, {
   title: "Survivor",
   imgURL: "https://live.staticflickr.com/6170/6190753659_7db2ef228e_b.jpg",
@@ -356,7 +360,11 @@ if (document.getElementById("bookDisplay")) {
 
   fictionBookList.forEach(displayBook);
 } // Fiction Display book
-// External icon after external link class external
+
+
+if (document.getElementById("detailFiction")) {
+  detailBook(fictionBookList, "detailFiction");
+} // External icon after external link class external
 
 
 var externalLink = document.getElementsByClassName("external");
@@ -404,6 +412,27 @@ if (document.getElementById("Unlock")) {
 function displayBook(book) {
   bookDisplay.insertAdjacentHTML("beforeend", "\n  \n  <div>\n \n     <figure> \n     <a href=\"".concat(book.title.split(' ').join('_'), ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </figure>\n  </div>\n  \n  \n  "));
 }
+
+function detailBook(bookList, bookSelector) {
+  var selectedBook = document.getElementsByTagName("h2");
+  var bookDisplay = document.getElementById(bookSelector);
+
+  for (var _x2 = 0; _x2 < bookList.length; _x2++) {
+    if (selectedBook[0].textContent === bookList[_x2].title) {
+      var book = bookList[_x2];
+      bookDisplay.insertAdjacentHTML("beforeend", "\n\n\n      <h3>Description of ".concat(book.title, "</h3>\n      <figure> \n      <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n      </a>\n      <figcaption>\n      ").concat(book.alt, "\n      <strong>Image Source: </strong> \n      <a class=\"external\" href=\"").concat(book.imgLink, "\">\n       ").concat(book.imgAuthor, "\n      </a>\n      <strong>License:</strong>\n      <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n      ").concat(book.imgLicense, "\n      </a>\n      </figcaption>\n     </figure>\n    \n      <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>\n      \n      <p id=\"beforeQuote\">What's mine is yours and what is yours is mine.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  I think he be transform'd into a beast; For I can nowhere find him like a man. Invest me in my motley; give me leave To speak my mind, and I will through and through Cleanse the foul body of th' infected world, If they will patiently receive my medicine. Hast any philosophy in thee, shepherd?</p>\n      \n      \n      \n      <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>\n      \n      \n      "));
+
+      if (book.quote) {
+        var beforeQuote = document.getElementById("beforeQuote");
+        beforeQuote.insertAdjacentHTML("afterend", "\n        \n        <blockquote cite=\"".concat(book.title, "\">\n        <p>\n        \u201C").concat(book.quote, "\u201D <cite>").concat(book.title, " by Chuck Palahniuk</cite> </p>\n        </blockquote>"));
+      }
+
+      if (book.videoURL) {
+        bookDisplay.insertAdjacentHTML("beforeend", "\n          <figure>\n            <h3>".concat(book.videoTitle, "<h3>\n            <iframe src=\"").concat(book.videoURL, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          <figure>\n        \n        "));
+      }
+    }
+  }
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -432,7 +461,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40319" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38005" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

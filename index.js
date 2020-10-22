@@ -75,7 +75,12 @@ const fictionBookList = [
     imgLicense: "(CC BY-NC-ND 2.0)",
     imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
     year: 1996,
-    alt: "Alternative Book Cover designed by a fan of the book "
+    alt: "Alternative Book Cover designed by a fan of the book ",
+    quote: "The things you used to own, now they own you.",
+    videoURL: "https://www.youtube.com/embed/GCuSDH-YEKI",
+    videoTitle: "Poscast Joe Rogan about fight club",
+    videoCaption: "Poscast Joe Rogan about fight club",
+
     
   }, {title:"Survivor",
       imgURL: "https://live.staticflickr.com/6170/6190753659_7db2ef228e_b.jpg",
@@ -318,6 +323,9 @@ const fictionBookList = [
 
 // Fiction Display book
 
+if(document.getElementById("detailFiction")){
+  detailBook(fictionBookList, "detailFiction")
+}
 
 
 
@@ -396,3 +404,69 @@ function displayBook(book){
 }
 
 
+function detailBook(bookList, bookSelector){
+  const selectedBook = document.getElementsByTagName("h2");
+  const bookDisplay= document.getElementById(bookSelector);
+  for(let x= 0; x<bookList.length; x++){
+    if(selectedBook[0].textContent=== bookList[x].title){
+      const book = bookList[x];
+
+      
+     bookDisplay.insertAdjacentHTML("beforeend", `
+
+
+      <h3>Description of ${book.title}</h3>
+      <figure> 
+      <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
+      </a>
+      <figcaption>
+      ${book.alt}
+      <strong>Image Source: </strong> 
+      <a class="external" href="${book.imgLink}">
+       ${book.imgAuthor}
+      </a>
+      <strong>License:</strong>
+      <a class="external" href="${book.imgLicenseURL}">
+      ${book.imgLicense}
+      </a>
+      </figcaption>
+     </figure>
+    
+      <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>
+      
+      <p id="beforeQuote">What's mine is yours and what is yours is mine.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  I think he be transform'd into a beast; For I can nowhere find him like a man. Invest me in my motley; give me leave To speak my mind, and I will through and through Cleanse the foul body of th' infected world, If they will patiently receive my medicine. Hast any philosophy in thee, shepherd?</p>
+      
+      
+      
+      <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>
+      
+      
+      `);
+
+      if(book.quote){
+        const beforeQuote = document.getElementById("beforeQuote");
+        beforeQuote.insertAdjacentHTML("afterend",`
+        
+        <blockquote cite="${book.title}">
+        <p>
+        “${book.quote}” <cite>${book.title} by Chuck Palahniuk</cite> </p>
+        </blockquote>`
+        
+        );
+      }
+
+      if(book.videoURL){
+        bookDisplay.insertAdjacentHTML("beforeend", `
+          <figure>
+            <h3>${book.videoTitle}<h3>
+            <iframe src="${book.videoURL}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>${book.videoCaption}</figcaption>
+          <figure>
+        
+        `);
+      }
+
+
+    }
+  }
+}
