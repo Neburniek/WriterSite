@@ -184,5 +184,10 @@ label input{
     border:5px solid #433D86;
 }
 
+/* book list */
+#bookDisplay figure img{
+    width: 80vw;
+    height: 80vw;
+}
 
 /*# sourceMappingURL=/styles.8986bff4.css.map */
