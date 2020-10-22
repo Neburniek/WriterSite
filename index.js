@@ -1,4 +1,5 @@
 // Header creation
+
 const bodyTag = document.getElementsByTagName("body");
 bodyTag[0].insertAdjacentHTML("afterbegin",`
 <header>
@@ -22,6 +23,10 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
 
 `);
 
+
+
+if(document.getElementsByTagName("h2")){
+  
 const h2Tag = document.getElementsByTagName("h2");
 const personalLife= document.getElementById("personalLife");
 const fictionBooks = document.getElementById("fictionBooks");
@@ -34,6 +39,9 @@ if(h2Tag[0].textContent === "Personal Life"){
 }else if(h2Tag[0].textContent === "Non-Fiction Books"){
   nonFiction.classList.add("here");
 }
+}
+
+
 
 // footer creation
 const mainTag = document.getElementsByTagName("main");
@@ -59,7 +67,7 @@ mainTag[0].insertAdjacentHTML("afterend",`
 
 
 
-const ficcionBookList = [
+const fictionBookList = [
   { title: "Fight Club",
     imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
     imgAuthor: "K嘛 / Flickr",
@@ -302,50 +310,18 @@ const ficcionBookList = [
   //       alt: "",
   //     }
 
-  // for(let x=0; x<booksList.length; x++ ){
-  //   if(booksList[x].title=== "Rant"){
-  //     console.log(booksList[x])
-  //   }
-  // }
-  
+
   if(document.getElementById("bookDisplay")){
   const bookDisplay= document.getElementById("bookDisplay");
-  // for(x=0; x<booksList.length; x++){
-  //   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
-  // }
-  ficcionBookList.forEach(displayBook);
-
-  function displayBook(book){
-    bookDisplay.insertAdjacentHTML("beforeend",`
-    
-    <div>
-   
-       <figure> 
-       <a href="${book.title.split(' ').join('_')}.html">
-       <h4>${book.title}</h4>
-       <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
-       </a>
-       <figcaption>
-       Book publication year: ${book.year}
-       <strong>Image Source: </strong> 
-       <a class="external" href="${book.imgLink}">
-        ${book.imgAuthor}
-       </a>
-       <strong>License:</strong>
-       <a class="external" href="${book.imgLicenseURL}">
-       ${book.imgLicense}
-       </a>
-       </figcaption>
-      </figure>
-    </div>
-    
-    
-    `)
-
-  }
-
-  
+  fictionBookList.forEach(displayBook);
 }
+
+// Fiction Display book
+
+
+
+
+
 // External icon after external link class external
 
 const externalLink = document.getElementsByClassName("external");
@@ -385,5 +361,38 @@ if(document.getElementById("Unlock")){
    
   })
 };
+
+
+// functions
+
+
+function displayBook(book){
+  bookDisplay.insertAdjacentHTML("beforeend",`
+  
+  <div>
+ 
+     <figure> 
+     <a href="${book.title.split(' ').join('_')}.html">
+     <h4>${book.title}</h4>
+     <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
+     </a>
+     <figcaption>
+     Book publication year: ${book.year}
+     <strong>Image Source: </strong> 
+     <a class="external" href="${book.imgLink}">
+      ${book.imgAuthor}
+     </a>
+     <strong>License:</strong>
+     <a class="external" href="${book.imgLicenseURL}">
+     ${book.imgLicense}
+     </a>
+     </figcaption>
+    </figure>
+  </div>
+  
+  
+  `)
+
+}
 
 

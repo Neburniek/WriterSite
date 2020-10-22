@@ -121,24 +121,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // Header creation
 var bodyTag = document.getElementsByTagName("body");
 bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <section id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1> <span>C</span>huck  <span>P</span>alahniuk</h1>\n                </a>\n            </section>\n            <section id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./graphicNovels.html\">Non-fiction books</a></li>\n                </ul>\n            </section>\n        </nav> \n    </header>\n    \n\n");
-var h2Tag = document.getElementsByTagName("h2");
-var personalLife = document.getElementById("personalLife");
-var fictionBooks = document.getElementById("fictionBooks");
-var nonFiction = document.getElementById("nonFiction");
 
-if (h2Tag[0].textContent === "Personal Life") {
-  personalLife.classList.add("here");
-} else if (h2Tag[0].textContent === "Fiction Books") {
-  fictionBooks.classList.add("here");
-} else if (h2Tag[0].textContent === "Non-Fiction Books") {
-  nonFiction.classList.add("here");
+if (document.getElementsByTagName("h2")) {
+  var h2Tag = document.getElementsByTagName("h2");
+  var personalLife = document.getElementById("personalLife");
+  var fictionBooks = document.getElementById("fictionBooks");
+  var nonFiction = document.getElementById("nonFiction");
+
+  if (h2Tag[0].textContent === "Personal Life") {
+    personalLife.classList.add("here");
+  } else if (h2Tag[0].textContent === "Fiction Books") {
+    fictionBooks.classList.add("here");
+  } else if (h2Tag[0].textContent === "Non-Fiction Books") {
+    nonFiction.classList.add("here");
+  }
 } // footer creation
 
 
 var mainTag = document.getElementsByTagName("main");
 mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); //list of ficcion books
 
-var ficcionBookList = [{
+var fictionBookList = [{
   title: "Fight Club",
   imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
   imgAuthor: "K嘛 / Flickr",
@@ -347,23 +350,13 @@ var ficcionBookList = [{
 //       year: "",
 //       alt: "",
 //     }
-// for(let x=0; x<booksList.length; x++ ){
-//   if(booksList[x].title=== "Rant"){
-//     console.log(booksList[x])
-//   }
-// }
 
 if (document.getElementById("bookDisplay")) {
-  var bookDisplay = document.getElementById("bookDisplay"); // for(x=0; x<booksList.length; x++){
-  //   bookDisplay.insertAdjacentHTML("beforeend",`<p>${booksList[x].title}</p>`)
-  // }
+  var _bookDisplay = document.getElementById("bookDisplay");
 
-  ficcionBookList.forEach(displayBook);
-
-  function displayBook(book) {
-    bookDisplay.insertAdjacentHTML("beforeend", "\n    \n    <div>\n   \n       <figure> \n       <a href=\"".concat(book.title.split(' ').join('_'), ".html\">\n       <h4>").concat(book.title, "</h4>\n       <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n       </a>\n       <figcaption>\n       Book publication year: ").concat(book.year, "\n       <strong>Image Source: </strong> \n       <a class=\"external\" href=\"").concat(book.imgLink, "\">\n        ").concat(book.imgAuthor, "\n       </a>\n       <strong>License:</strong>\n       <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n       ").concat(book.imgLicense, "\n       </a>\n       </figcaption>\n      </figure>\n    </div>\n    \n    \n    "));
-  }
-} // External icon after external link class external
+  fictionBookList.forEach(displayBook);
+} // Fiction Display book
+// External icon after external link class external
 
 
 var externalLink = document.getElementsByClassName("external");
@@ -406,7 +399,11 @@ if (document.getElementById("Unlock")) {
   });
 }
 
-;
+; // functions
+
+function displayBook(book) {
+  bookDisplay.insertAdjacentHTML("beforeend", "\n  \n  <div>\n \n     <figure> \n     <a href=\"".concat(book.title.split(' ').join('_'), ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </figure>\n  </div>\n  \n  \n  "));
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -435,7 +432,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41251" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
