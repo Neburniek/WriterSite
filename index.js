@@ -17,7 +17,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
                     <h1>Chuck Palahniuk</h1>
                 </a>
             </div>
-            <divid="nav-options">
+            <div id="nav-options">
                 <ul>
                     <li><a id="personalLife" href="./personalLife.html">Personal life</a></li>
                     <li><a id="fictionBooks" href="./fictionBooks.html">Fiction books</a></li>

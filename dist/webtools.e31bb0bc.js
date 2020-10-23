@@ -124,7 +124,7 @@ var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[
 // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <section id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </section>\n            <section id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\">Non-fiction books</a></li>\n                </ul>\n            </section>\n        </nav> \n    </header>\n    \n\n");
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\">Non-fiction books</a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n    \n\n");
 
 if (document.getElementsByTagName("h2")) {
   var personalLife = document.getElementById("personalLife");
@@ -544,7 +544,7 @@ function detailBook(bookList, bookSelector) {
       }
 
       if (book.videoURL) {
-        bookDisplay.insertAdjacentHTML("beforeend", "\n        <section>\n          <figure>\n            <h3>".concat(book.videoTitle, "<h3>\n            <iframe src=\"").concat(book.videoURL, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          <figure>\n          </section>\n        \n        "));
+        bookDisplay.insertAdjacentHTML("beforeend", "\n        <section> \n            <figure>\n            <h3>".concat(book.videoTitle, "</h3>\n            <iframe src=\"").concat(book.videoURL, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          </figure>\n          </section>\n        \n        "));
       }
 
       if (_x2 === 0) {
@@ -593,7 +593,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35765" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35579" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
