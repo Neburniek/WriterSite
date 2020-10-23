@@ -124,7 +124,7 @@ var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[
 // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <section id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </section>\n            <section id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./graphicNovels.html\">Non-fiction books</a></li>\n                </ul>\n            </section>\n        </nav> \n    </header>\n    \n\n");
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <section id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </section>\n            <section id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\">Non-fiction books</a></li>\n                </ul>\n            </section>\n        </nav> \n    </header>\n    \n\n");
 
 if (document.getElementsByTagName("h2")) {
   var personalLife = document.getElementById("personalLife");
@@ -142,7 +142,7 @@ if (document.getElementsByTagName("h2")) {
 
 
 var mainTag = document.getElementsByTagName("main");
-mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); //list of ficcion books
+mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); //list of books
 
 var fictionBookList = [{
   title: "Fight Club",
@@ -283,13 +283,17 @@ var fictionBookList = [{
   videoCaption: "Tell All event with Chuck Palahniuk"
 }, {
   title: "Damned",
-  imgURL: "https://live.staticflickr.com/6093/6307632498_99d2da7858_b.jpg",
-  imgAuthor: "Neil R / Flickr",
-  imgLink: "https://www.flickr.com/photos/islespunkfan/6307632498/in/photostream/",
-  imgLicense: "(CC BY-NC 2.0)",
-  imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+  imgURL: "https://live.staticflickr.com/3787/9254011665_ba476b221f.jpg",
+  imgAuthor: "Emiliano / Flickr",
+  imgLink: "https://www.flickr.com/photos/taskforsome/9254011665/",
+  imgLicense: "(CC BY-SA 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
   year: 2011,
-  alt: "Book signed by Chuck Palahniuk, "
+  alt: "Book signed by Chuck Palahniuk, ",
+  quote: "Life is short, death is forever",
+  videoURL: "https://www.youtube.com/embed/EbaERz37ieg",
+  videoTitle: "Presentation of Damned",
+  videoCaption: "Presentation of Damned at Strand Book Store"
 }, {
   title: "Doomed",
   imgURL: "https://live.staticflickr.com/3736/10581759016_5af50e956f_z.jpg",
@@ -298,7 +302,11 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC-ND 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 2013,
-  alt: "Books in a library, between them is "
+  alt: "Books in a library, between them is ",
+  quote: "When you die, trust me, the most difficult person to leave behind is yourself.",
+  videoURL: "https://www.youtube.com/embed/6pQG12lUS2Q",
+  videoTitle: "Chuck Palahniuk reads from Doomed",
+  videoCaption: "Chuck Palahniuk reads from Doomed"
 }, {
   title: "Burnt Tongues",
   imgURL: "https://live.staticflickr.com/2372/1716382953_65647762bf_z.jpg",
@@ -307,7 +315,8 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
   year: 2014,
-  alt: "Books arround broken Tv,  "
+  alt: "Books arround broken Tv,  ",
+  quote: "Young people want mirrors. Older people want art."
 }, {
   title: "Beautiful You",
   imgURL: "https://live.staticflickr.com/5219/5384227790_204867f061_z.jpg",
@@ -316,7 +325,11 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC 2.0) ",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
   year: 2014,
-  alt: "Books on a Shelf, "
+  alt: "Books on a Shelf, ",
+  quote: "The mistakes we make in our youth,\" she said solemnly, \"we pay for with the rest of our lives.",
+  videoURL: "https://www.youtube.com/embed/r9QgBrLWMXA",
+  videoTitle: "Chuck Palahniuk \"Beautiful You\" tour at Powerhouse Arena in Brooklyn",
+  videoCaption: "Chuck Palahniuk \"Beautiful You\" tour at Powerhouse Arena in Brooklyn"
 }, {
   title: "Make Something Up",
   imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
@@ -325,7 +338,8 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC-ND 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 2015,
-  alt: "Palahniuk Books, "
+  alt: "Palahniuk Books, ",
+  quote: "The ice-cold way death can hit you in the noontime of a sunny day just when you'd never expect."
 }, {
   title: "Fight Club 2",
   imgURL: "https://live.staticflickr.com/7153/6624162303_832a483579_z.jpg",
@@ -334,7 +348,10 @@ var fictionBookList = [{
   imgLicense: "(CC BY-SA 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
   year: 2016,
-  alt: "Soap pills representing Fight Club, "
+  alt: "Soap pills representing Fight Club, ",
+  videoURL: "https://www.youtube.com/embed/TGYEoKbGi4Q",
+  videoTitle: "Chuck Palahniuk talks about Fight Club 2",
+  videoCaption: "Chuck Palahniuk talks about Fight Clubt 2 at San Diego Comic-con"
 }, {
   title: "Bait",
   imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
@@ -352,7 +369,10 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC-ND 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 2017,
-  alt: "Palahniuk Books, "
+  alt: "Palahniuk Books, ",
+  videoURL: "https://www.youtube.com/embed/ER_p4KKq2FU",
+  videoTitle: "Presentation of Legacy",
+  videoCaption: "Presentation of Legacy in KGW news"
 }, {
   title: "Adjustment Day",
   imgURL: "https://live.staticflickr.com/978/40975530065_ea04998cc0_z.jpg",
@@ -361,7 +381,11 @@ var fictionBookList = [{
   imgLicense: "(CC BY-NC-ND 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 2018,
-  alt: "Books in library, one of them is "
+  alt: "Books in library, one of them is ",
+  quote: "Imagine there is no God. There is no Heaven or Hell. There is only your son and his son and his son, and the world you leave for them.",
+  videoURL: "https://www.youtube.com/embed/UNbRzEssSi8",
+  videoTitle: "Chuck Palahniuk talks about Adjustment Day",
+  videoCaption: "Chuck Palahniuk talks about Adjustment Day at KGW News"
 }, {
   title: "Fight Club 3",
   imgURL: "https://live.staticflickr.com/7153/6624162303_832a483579_z.jpg",
@@ -370,7 +394,10 @@ var fictionBookList = [{
   imgLicense: "(CC BY-SA 2.0)",
   imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
   year: 2016,
-  alt: "Soap pills representing Fight Club, "
+  alt: "Soap pills representing Fight Club, ",
+  videoURL: "https://www.youtube.com/embed/6lROjhB0vOk",
+  videoTitle: "Fight Club 3 trailer",
+  videoCaption: "Fight Club 3 trailer by Dark Horse Comics"
 }, {
   title: "The Invention of Sound",
   imgURL: "https://live.staticflickr.com/4007/4709527753_c4d1c8c094_b.jpg",
@@ -380,6 +407,42 @@ var fictionBookList = [{
   imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
   year: 2017,
   alt: "Palahniuk Books, "
+}];
+var nonFictionBookList = [{
+  title: "Fugitives and Refugees",
+  imgURL: "https://live.staticflickr.com/221/468501794_663acb4c72.jpg",
+  imgAuthor: "susieredshores /Flickr",
+  imgLink: "https://www.flickr.com/photos/saundersmecklem/468501794/in/photolist-Hpcg9-fgnxjQ-273RFUs",
+  imgLicense: "(CC BY-NC-ND 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2003,
+  alt: "Chuck Palahniuk's book in Portland, oregon. "
+}, {
+  title: "Stranger than Fiction",
+  imgURL: "https://live.staticflickr.com/3502/3947970111_2377df0cef.jpg",
+  imgAuthor: "Jessie Pearl / Flickr",
+  imgLink: "https://www.flickr.com/photos/terwilliger911/3947970111/",
+  imgLicense: "(CC BY 2.0)",
+  imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+  year: 2004,
+  alt: "Books of palahniuk, ",
+  quote: "A good story should make you laugh, and a moment later break your heart.",
+  videoURL: "https://www.youtube.com/embed/AqdYbZ8tBXg",
+  videoTitle: "Book Review of Stranger Than Fiction",
+  videoCaption: "Book review of Stranger than Fiction by Michael Guiliano"
+}, {
+  title: "Consider This",
+  imgURL: "https://live.staticflickr.com/65535/49400748353_7369efc1c4.jpg",
+  imgAuthor: "Pesky Librarians / Flickr",
+  imgLink: "https://www.flickr.com/photos/peskylibrary/49400748353/",
+  imgLicense: "(CC BY-NC-ND 2.0) ",
+  imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+  year: 2020,
+  alt: "Book cover of the book ",
+  quote: "By writing , people present their lives as fiction and tackle their issues as a craft exercise . By redeeming their protagonist , they find their own redemption .",
+  videoURL: "https://www.youtube.com/embed/nHqx9nEtSVg",
+  videoTitle: "Chuck Palahniuk speaking about Consider This",
+  videoCaption: "Chuck Palahniuk speaking about Consider This, by Hachette book Group"
 }]; // ,
 //     {
 //       title: "",
@@ -391,16 +454,23 @@ var fictionBookList = [{
 //       year: "",
 //       alt: "",
 //     }
+// book Display
 
 if (document.getElementById("bookDisplay")) {
   var _bookDisplay = document.getElementById("bookDisplay");
 
-  fictionBookList.forEach(displayBook);
-} // Fiction Display book
+  if (h2Tag[0].textContent === "Fiction Books") {
+    fictionBookList.forEach(displayBook);
+  } else {
+    nonFictionBookList.forEach(displayBook);
+  }
+} // Fiction detail Display book
 
 
 if (document.getElementById("detailFiction")) {
   detailBook(fictionBookList, "detailFiction");
+} else if (document.getElementById("detailNonFiction")) {
+  detailBook(nonFictionBookList, "detailNonFiction");
 } // External icon after external link class external
 
 
@@ -447,7 +517,8 @@ if (document.getElementById("Unlock")) {
 ; // functions
 
 function displayBook(book) {
-  bookDisplay.insertAdjacentHTML("beforeend", "\n  \n  <div>\n \n     <figure> \n     <a href=\"".concat(book.title.split(' ').join('_'), ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </figure>\n  </div>\n  \n  \n  "));
+  var link = book.title.charAt(0).toLowerCase() + book.title.slice(1).split(' ').join('');
+  bookDisplay.insertAdjacentHTML("beforeend", "\n  \n  <div>\n \n     <figure> \n     <a href=\"".concat(link, ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </figure>\n  </div>\n  \n  \n  "));
 }
 
 function detailBook(bookList, bookSelector) {
@@ -458,6 +529,13 @@ function detailBook(bookList, bookSelector) {
   for (var _x2 = 0; _x2 < bookList.length; _x2++) {
     if (selectedBook[0].textContent === bookList[_x2].title) {
       var book = bookList[_x2];
+
+      if (bookSelector === "detailFiction") {
+        bookDisplay.insertAdjacentHTML("afterbegin", "<div id=\"returnTag\" ><a href=\"./fictionBooks.html\"> < return to Fiction Book section</a></div>");
+      } else {
+        bookDisplay.insertAdjacentHTML("afterbegin", "<div id=\"returnTag\" ><a href=\"./nonFiction.html\"> < return to Non Fiction Book section</a></div>");
+      }
+
       bookDisplay.insertAdjacentHTML("beforeend", "\n\n\n      <h3>Description of ".concat(book.title, "</h3>\n      <figure> \n      <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n      </a>\n      <figcaption>\n      ").concat(book.alt, "\n      <strong>Image Source: </strong> \n      <a class=\"external\" href=\"").concat(book.imgLink, "\">\n       ").concat(book.imgAuthor, "\n      </a>\n      <strong>License:</strong>\n      <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n      ").concat(book.imgLicense, "\n      </a>\n      </figcaption>\n     </figure>\n    \n      <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>\n      \n      <p id=\"beforeQuote\">What's mine is yours and what is yours is mine.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  I think he be transform'd into a beast; For I can nowhere find him like a man. Invest me in my motley; give me leave To speak my mind, and I will through and through Cleanse the foul body of th' infected world, If they will patiently receive my medicine. Hast any philosophy in thee, shepherd?</p>\n      \n      \n      \n      <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>\n      \n      \n      "));
 
       if (book.quote) {
@@ -473,14 +551,16 @@ function detailBook(bookList, bookSelector) {
         footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"previous\"> <p>No previous books</p></div>");
       } else {
         var previousBook = bookList[_x2 - 1];
-        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"previous\"> <a href=\"".concat(previousBook.title.split(' ').join('_'), ".html\"><p>").concat(previousBook.title, "</p> </a></div>"));
+        var previousLink = previousBook.title.charAt(0).toLowerCase() + previousBook.title.slice(1).split(' ').join('');
+        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"previous\"> <a href=\"".concat(previousLink, ".html\">< ").concat(previousBook.title, "</a></div>"));
       }
 
       if (_x2 === bookList.length - 1) {
-        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <p>No new books</p></div>");
+        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <p>No next books</p></div>");
       } else {
         var nextBook = bookList[_x2 + 1];
-        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <a href=\"".concat(nextBook.title.split(' ').join('_'), ".html\"><p>").concat(nextBook.title, "</p> </a></div>"));
+        var nextLink = nextBook.title.charAt(0).toLowerCase() + nextBook.title.slice(1).split(' ').join('');
+        footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <a href=\"".concat(nextLink, ".html\"><p>").concat(nextBook.title, " ></p> </a></div>"));
       }
     }
   }
@@ -513,7 +593,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40877" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33081" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

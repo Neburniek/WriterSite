@@ -21,7 +21,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
                 <ul>
                     <li><a id="personalLife" href="./personalLife.html">Personal life</a></li>
                     <li><a id="fictionBooks" href="./fictionBooks.html">Fiction books</a></li>
-                    <li><a id="nonFiction" href="./graphicNovels.html">Non-fiction books</a></li>
+                    <li><a id="nonFiction" href="./nonFiction.html">Non-fiction books</a></li>
                 </ul>
             </section>
         </nav> 
@@ -69,7 +69,7 @@ mainTag[0].insertAdjacentHTML("afterend",`
 
 
 
-//list of ficcion books
+//list of books
 
 
 
@@ -232,13 +232,18 @@ const fictionBookList = [
       },
       {
         title: "Damned",
-        imgURL: "https://live.staticflickr.com/6093/6307632498_99d2da7858_b.jpg",
-        imgAuthor: "Neil R / Flickr",
-        imgLink: "https://www.flickr.com/photos/islespunkfan/6307632498/in/photostream/",
-        imgLicense: "(CC BY-NC 2.0)",
-        imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
+        imgURL: "https://live.staticflickr.com/3787/9254011665_ba476b221f.jpg",
+        imgAuthor: "Emiliano / Flickr",
+        imgLink: "https://www.flickr.com/photos/taskforsome/9254011665/",
+        imgLicense: "(CC BY-SA 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
         year: 2011,
         alt: "Book signed by Chuck Palahniuk, ",
+        quote: "Life is short, death is forever",
+        videoURL: "https://www.youtube.com/embed/EbaERz37ieg",
+        videoTitle: "Presentation of Damned",
+        videoCaption: "Presentation of Damned at Strand Book Store"
+
       },
       {
         title: "Doomed",
@@ -249,6 +254,10 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2013,
         alt: "Books in a library, between them is ",
+        quote: "When you die, trust me, the most difficult person to leave behind is yourself.",
+        videoURL: "https://www.youtube.com/embed/6pQG12lUS2Q",
+        videoTitle: "Chuck Palahniuk reads from Doomed",
+        videoCaption: "Chuck Palahniuk reads from Doomed"
       },
       {
         title: "Burnt Tongues",
@@ -259,6 +268,8 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
         year: 2014,
         alt: "Books arround broken Tv,  ",
+        quote: "Young people want mirrors. Older people want art.",
+        
       },
       {
         title: "Beautiful You",
@@ -269,6 +280,10 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc/2.0/",
         year: 2014,
         alt: "Books on a Shelf, ",
+        quote: `The mistakes we make in our youth," she said solemnly, "we pay for with the rest of our lives.`,
+        videoURL: "https://www.youtube.com/embed/r9QgBrLWMXA",
+        videoTitle: `Chuck Palahniuk "Beautiful You" tour at Powerhouse Arena in Brooklyn`,
+        videoCaption: `Chuck Palahniuk "Beautiful You" tour at Powerhouse Arena in Brooklyn`
       },
 
       {
@@ -279,7 +294,9 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC-ND 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2015,
-        alt: "Palahniuk Books, "
+        alt: "Palahniuk Books, ",
+        quote: "The ice-cold way death can hit you in the noontime of a sunny day just when you'd never expect.",
+
       },
       {
         title: "Fight Club 2",
@@ -290,6 +307,9 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
         year: 2016,
         alt: "Soap pills representing Fight Club, ",
+        videoURL: "https://www.youtube.com/embed/TGYEoKbGi4Q",
+        videoTitle: "Chuck Palahniuk talks about Fight Club 2",
+        videoCaption: "Chuck Palahniuk talks about Fight Clubt 2 at San Diego Comic-con"
       },
       {
         title: "Bait",
@@ -309,7 +329,10 @@ const fictionBookList = [
         imgLicense:"(CC BY-NC-ND 2.0)",
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2017,
-        alt: "Palahniuk Books, "
+        alt: "Palahniuk Books, ",
+        videoURL: "https://www.youtube.com/embed/ER_p4KKq2FU",
+        videoTitle: "Presentation of Legacy",
+        videoCaption: "Presentation of Legacy in KGW news"
       },
       {
         title: "Adjustment Day",
@@ -320,6 +343,10 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
         year: 2018,
         alt: "Books in library, one of them is ",
+        quote: "Imagine there is no God. There is no Heaven or Hell. There is only your son and his son and his son, and the world you leave for them.",
+        videoURL: "https://www.youtube.com/embed/UNbRzEssSi8",
+        videoTitle: "Chuck Palahniuk talks about Adjustment Day",
+        videoCaption: "Chuck Palahniuk talks about Adjustment Day at KGW News"
       },
       {
         title: "Fight Club 3",
@@ -330,6 +357,9 @@ const fictionBookList = [
         imgLicenseURL: "https://creativecommons.org/licenses/by-sa/2.0/",
         year: 2016,
         alt: "Soap pills representing Fight Club, ",
+        videoURL: "https://www.youtube.com/embed/6lROjhB0vOk",
+        videoTitle: "Fight Club 3 trailer",
+        videoCaption: "Fight Club 3 trailer by Dark Horse Comics"
       },
       {
         title: "The Invention of Sound",
@@ -347,6 +377,48 @@ const fictionBookList = [
   
   ]
 
+  const nonFictionBookList =[
+          {
+        title: "Fugitives and Refugees",
+        imgURL: "https://live.staticflickr.com/221/468501794_663acb4c72.jpg",
+        imgAuthor: "susieredshores /Flickr",
+        imgLink: "https://www.flickr.com/photos/saundersmecklem/468501794/in/photolist-Hpcg9-fgnxjQ-273RFUs",
+        imgLicense: "(CC BY-NC-ND 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2003,
+        alt: "Chuck Palahniuk's book in Portland, oregon. ",
+      },
+      {
+        title: "Stranger than Fiction",
+        imgURL: "https://live.staticflickr.com/3502/3947970111_2377df0cef.jpg",
+        imgAuthor: "Jessie Pearl / Flickr",
+        imgLink: "https://www.flickr.com/photos/terwilliger911/3947970111/",
+        imgLicense: "(CC BY 2.0)",
+        imgLicenseURL: "https://creativecommons.org/licenses/by/2.0/",
+        year: 2004,
+        alt: "Books of palahniuk, ",
+        quote: "A good story should make you laugh, and a moment later break your heart.",
+        videoURL: "https://www.youtube.com/embed/AqdYbZ8tBXg",
+        videoTitle: "Book Review of Stranger Than Fiction",
+        videoCaption: "Book review of Stranger than Fiction by Michael Guiliano"
+      },
+      {
+        title: "Consider This",
+        imgURL: "https://live.staticflickr.com/65535/49400748353_7369efc1c4.jpg",
+        imgAuthor: "Pesky Librarians / Flickr",
+        imgLink: "https://www.flickr.com/photos/peskylibrary/49400748353/",
+        imgLicense: "(CC BY-NC-ND 2.0) ",
+        imgLicenseURL: "https://creativecommons.org/licenses/by-nc-nd/2.0/",
+        year: 2020,
+        alt: "Book cover of the book ",
+        quote: "By writing , people present their lives as fiction and tackle their issues as a craft exercise . By redeeming their protagonist , they find their own redemption .",
+        videoURL:"https://www.youtube.com/embed/nHqx9nEtSVg",
+        videoTitle: "Chuck Palahniuk speaking about Consider This",
+        videoCaption: "Chuck Palahniuk speaking about Consider This, by Hachette book Group"
+      }
+
+  ]
+
   // ,
   //     {
   //       title: "",
@@ -360,15 +432,25 @@ const fictionBookList = [
   //     }
 
 
+  // book Display
   if(document.getElementById("bookDisplay")){
   const bookDisplay= document.getElementById("bookDisplay");
-  fictionBookList.forEach(displayBook);
+
+  if(h2Tag[0].textContent === "Fiction Books"){
+      fictionBookList.forEach(displayBook);
+  }else{
+    nonFictionBookList.forEach(displayBook);
+
+  }
 }
 
-// Fiction Display book
+// Fiction detail Display book
 
 if(document.getElementById("detailFiction")){
   detailBook(fictionBookList, "detailFiction")
+}else if (document.getElementById("detailNonFiction")){
+  detailBook(nonFictionBookList, "detailNonFiction")
+
 }
 
 
@@ -419,12 +501,14 @@ if(document.getElementById("Unlock")){
 
 
 function displayBook(book){
+
+const  link= book.title.charAt(0).toLowerCase() + book.title.slice(1) .split(' ').join('');
   bookDisplay.insertAdjacentHTML("beforeend",`
   
   <div>
  
      <figure> 
-     <a href="${book.title.split(' ').join('_')}.html">
+     <a href="${link}.html">
      <h4>${book.title}</h4>
      <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
      </a>
@@ -456,6 +540,13 @@ function detailBook(bookList, bookSelector){
   for(let x= 0; x<bookList.length; x++){
     if(selectedBook[0].textContent=== bookList[x].title){
       const book = bookList[x];
+
+      if(bookSelector=== "detailFiction"){
+        bookDisplay.insertAdjacentHTML("afterbegin", `<div id="returnTag" ><a href="./fictionBooks.html"> < return to Fiction Book section</a></div>`)
+      }else{
+        bookDisplay.insertAdjacentHTML("afterbegin", `<div id="returnTag" ><a href="./nonFiction.html"> < return to Non Fiction Book section</a></div>`)
+      }
+      
 
       
      bookDisplay.insertAdjacentHTML("beforeend", `
@@ -519,17 +610,21 @@ function detailBook(bookList, bookSelector){
         footerTag[0].insertAdjacentHTML("beforebegin", `<div id="previous"> <p>No previous books</p></div>`)
       }else{
        const previousBook=  bookList[x-1];
-        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="previous"> <a href="${previousBook.title.split(' ').join('_')}.html"><p>${previousBook.title}</p> </a></div>`)
+        const  previousLink= previousBook.title.charAt(0).toLowerCase() + previousBook.title.slice(1) .split(' ').join('');
+
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="previous"> <a href="${previousLink}.html">< ${previousBook.title}</a></div>`)
 
   
       }
 
       if(x === bookList.length - 1){
-        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <p>No new books</p></div>`)
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <p>No next books</p></div>`)
 
       }else{
         const nextBook=  bookList[x+1];
-        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <a href="${nextBook.title.split(' ').join('_')}.html"><p>${nextBook.title}</p> </a></div>`)
+        const  nextLink= nextBook.title.charAt(0).toLowerCase() + nextBook.title.slice(1) .split(' ').join('');
+
+        footerTag[0].insertAdjacentHTML("beforebegin", `<div id="next"> <a href="${nextLink}.html"><p>${nextBook.title} ></p> </a></div>`)
 
       }
 
