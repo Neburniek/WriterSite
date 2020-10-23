@@ -124,7 +124,7 @@ var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[
 // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\">Personal life</a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\">Fiction books</a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\">Non-fiction books</a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n    \n\n");
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n    \n\n");
 
 if (document.getElementsByTagName("h2")) {
   var personalLife = document.getElementById("personalLife");
@@ -483,20 +483,7 @@ for (var x = 0; x < externalLink.length; x++) {
 
 
 var copyrightDate = document.getElementById("copyrightDate");
-copyrightDate.textContent = new Date().getFullYear(); // Image click eventListener
-
-var imageArray = document.getElementsByTagName("img");
-
-var _loop = function _loop(_x) {
-  imageArray[_x].addEventListener("click", function () {
-    imageArray[_x].classList.toggle("imageSelected");
-  });
-};
-
-for (var _x = 0; _x < imageArray.length; _x++) {
-  _loop(_x);
-} // adult content display
-
+copyrightDate.textContent = new Date().getFullYear(); // adult content display
 
 if (document.getElementById("Unlock")) {
   var adultUnlocker = document.getElementById("Unlock");
@@ -526,9 +513,9 @@ function detailBook(bookList, bookSelector) {
   var bookDisplay = document.getElementById(bookSelector);
   var footerTag = document.getElementsByTagName("footer");
 
-  for (var _x2 = 0; _x2 < bookList.length; _x2++) {
-    if (selectedBook[0].textContent === bookList[_x2].title) {
-      var book = bookList[_x2];
+  for (var _x = 0; _x < bookList.length; _x++) {
+    if (selectedBook[0].textContent === bookList[_x].title) {
+      var book = bookList[_x];
 
       if (bookSelector === "detailFiction") {
         bookDisplay.insertAdjacentHTML("afterbegin", "<div id=\"returnTag\" ><a href=\"./fictionBooks.html\"> < return to Fiction Book section</a></div>");
@@ -547,18 +534,18 @@ function detailBook(bookList, bookSelector) {
         bookDisplay.insertAdjacentHTML("beforeend", "\n        <section> \n            <figure>\n            <h3>".concat(book.videoTitle, "</h3>\n            <iframe src=\"").concat(book.videoURL, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          </figure>\n          </section>\n        \n        "));
       }
 
-      if (_x2 === 0) {
+      if (_x === 0) {
         footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"previous\"> <p>No previous books</p></div>");
       } else {
-        var previousBook = bookList[_x2 - 1];
+        var previousBook = bookList[_x - 1];
         var previousLink = previousBook.title.charAt(0).toLowerCase() + previousBook.title.slice(1).split(' ').join('');
         footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"previous\"> <a href=\"".concat(previousLink, ".html\">< ").concat(previousBook.title, "</a></div>"));
       }
 
-      if (_x2 === bookList.length - 1) {
+      if (_x === bookList.length - 1) {
         footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <p>No next books</p></div>");
       } else {
-        var nextBook = bookList[_x2 + 1];
+        var nextBook = bookList[_x + 1];
         var nextLink = nextBook.title.charAt(0).toLowerCase() + nextBook.title.slice(1).split(' ').join('');
         footerTag[0].insertAdjacentHTML("beforebegin", "<div id=\"next\"> <a href=\"".concat(nextLink, ".html\"><p>").concat(nextBook.title, " ></p> </a></div>"));
       }
@@ -593,7 +580,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35579" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42219" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

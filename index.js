@@ -19,9 +19,9 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             </div>
             <div id="nav-options">
                 <ul>
-                    <li><a id="personalLife" href="./personalLife.html">Personal life</a></li>
-                    <li><a id="fictionBooks" href="./fictionBooks.html">Fiction books</a></li>
-                    <li><a id="nonFiction" href="./nonFiction.html">Non-fiction books</a></li>
+                    <li><a id="personalLife" href="./personalLife.html"> Personal life </a></li>
+                    <li><a id="fictionBooks" href="./fictionBooks.html"> Fiction books </a></li>
+                    <li><a id="nonFiction" href="./nonFiction.html"> Non-fiction books </a></li>
                 </ul>
             </div>
         </nav> 
@@ -453,9 +453,6 @@ if(document.getElementById("detailFiction")){
 
 }
 
-
-
-
 // External icon after external link class external
 
 const externalLink = document.getElementsByClassName("external");
@@ -468,15 +465,6 @@ for(let x=0; x<externalLink.length; x++){
 const copyrightDate =document.getElementById("copyrightDate");
 copyrightDate.textContent=new Date().getFullYear();
 
-// Image click eventListener
-const imageArray= document.getElementsByTagName("img");
-for(let x=0; x < imageArray.length; x++){
-        imageArray[x].addEventListener("click",()=>{
-          imageArray[x].classList.toggle("imageSelected");
-          
-        })
-        
-}
 
 // adult content display
 if(document.getElementById("Unlock")){

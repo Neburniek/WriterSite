@@ -45,7 +45,7 @@ blockquote a {
 #next{
     position: relative;
     float:right;
-    bottom: 50px;
+    bottom: 46px;
     right:10px;
     font-weight: 800;
 
@@ -124,7 +124,6 @@ nav h1 {
 
 /* images: */
 img{
-    cursor:pointer; 
     width: 80vw;
     max-width: 500px;
 }
@@ -135,21 +134,15 @@ figure {
 }
 .image-circle{
     border-radius: 50%;
+    width: 300px;
+
 }
 figcaption{
     font-size:2vw;
     line-height: 15px;
 }
-.imageSelected{
-    border-radius: 0%;
-    width:90vw;
-    border:5px solid #433D86;
-}
 
-/* position tools */
-.centered{
-    text-align: center;
-}
+
 
 /* Adult Content*/
 .hidden{
@@ -188,18 +181,105 @@ label input{
 
 /* index */
 
-#index img{
-    width:40vw;
-}
 
-#index .imageSelected{
-    border-radius: 0%;
-    width:90vw;
-    border:5px solid #433D86;
-}
 
 /* book list */
 #bookDisplay figure img{
     width: 80vw;
     height: 80vw;
+}
+
+/* tablet version */
+
+@media(min-width:700px){
+
+    /* general */
+
+    body{
+        background-color: lightgreen;
+    }
+
+    /* header */
+
+nav p {
+    font-size:28px;
+    
+}
+nav h1 {
+    font-size: 35px;
+    
+}
+#nav-options {
+    background-color: #000;
+    text-align: left;
+    height: 60px;
+    height: 50px;
+
+
+}
+#nav-options ul{
+    font-size: 20px;
+    list-style: none; 
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border:none;
+    height: 50px;
+}
+#nav-options ul li {
+    margin: 17px 0 auto 18px;
+}
+
+#nav-options ul li:nth-of-type(1) :after{
+    content: "|";
+    margin-left:8px;
+    color:#f4f3f1;
+}
+#nav-options ul li:nth-of-type(2) :after{
+    content: "|";
+    margin-left:8px;
+    color:#f4f3f1;
+}
+
+#nav-options ul li a {
+    color:#f4f3f1;
+    font-weight:400;
+}
+#title{
+    padding:15px;
+    height: 50px;
+
+}
+
+/* images */
+/* 
+img{
+    width: 80vw;
+    max-width: 500px;
+} */
+
+figure {
+    margin:0;
+    text-align: left;
+}
+.image-circle{
+    border-radius: 0%;
+    width: 200px;
+    height: 300px;
+
+
+}
+figcaption{
+    font-size:10px;
+    line-height: 15px;
+}
+
+/* index */
+#index figure:nth-of-type(1){
+    position: relative;
+    float: right;
+    margin:10px 10px 100px 10px;
+    top:100px;
+
+}
 }
