@@ -11,19 +11,19 @@ const bodyTag = document.getElementsByTagName("body");
 bodyTag[0].insertAdjacentHTML("afterbegin",`
 <header>
         <nav>
-            <section id="title">
+            <div id="title">
                 <a href="./index.html">
                     <p>Fan site of</p>
                     <h1>Chuck Palahniuk</h1>
                 </a>
-            </section>
-            <section id="nav-options">
+            </div>
+            <divid="nav-options">
                 <ul>
                     <li><a id="personalLife" href="./personalLife.html">Personal life</a></li>
                     <li><a id="fictionBooks" href="./fictionBooks.html">Fiction books</a></li>
                     <li><a id="nonFiction" href="./nonFiction.html">Non-fiction books</a></li>
                 </ul>
-            </section>
+            </div>
         </nav> 
     </header>
     
@@ -551,7 +551,7 @@ function detailBook(bookList, bookSelector){
       
      bookDisplay.insertAdjacentHTML("beforeend", `
 
-
+      <section>
       <h3>Description of ${book.title}</h3>
       <figure> 
       <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
@@ -577,7 +577,7 @@ function detailBook(bookList, bookSelector){
       
       <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>
       
-      
+      </section>
       `);
 
       if(book.quote){
@@ -594,11 +594,13 @@ function detailBook(bookList, bookSelector){
 
       if(book.videoURL){
         bookDisplay.insertAdjacentHTML("beforeend", `
-          <figure>
-            <h3>${book.videoTitle}<h3>
+        <section> 
+            <figure>
+            <h3>${book.videoTitle}</h3>
             <iframe src="${book.videoURL}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption>${book.videoCaption}</figcaption>
-          <figure>
+          </figure>
+          </section>
         
         `);
 
