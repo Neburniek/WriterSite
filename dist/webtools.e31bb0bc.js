@@ -523,7 +523,7 @@ function detailBook(bookList, bookSelector) {
         bookDisplay.insertAdjacentHTML("afterbegin", "<div id=\"returnTag\" ><a href=\"./nonFiction.html\"> < return to Non Fiction Book section</a></div>");
       }
 
-      bookDisplay.insertAdjacentHTML("beforeend", "\n\n      <section>\n      <h3>Description of ".concat(book.title, "</h3>\n      <figure> \n      <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n      </a>\n      <figcaption>\n      ").concat(book.alt, "\n      <strong>Image Source: </strong> \n      <a class=\"external\" href=\"").concat(book.imgLink, "\">\n       ").concat(book.imgAuthor, "\n      </a>\n      <strong>License:</strong>\n      <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n      ").concat(book.imgLicense, "\n      </a>\n      </figcaption>\n     </figure>\n    \n      <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>\n      \n      <p id=\"beforeQuote\">What's mine is yours and what is yours is mine.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  I think he be transform'd into a beast; For I can nowhere find him like a man. Invest me in my motley; give me leave To speak my mind, and I will through and through Cleanse the foul body of th' infected world, If they will patiently receive my medicine. Hast any philosophy in thee, shepherd?</p>\n      \n      \n      \n      <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>\n      \n      </section>\n      "));
+      bookDisplay.insertAdjacentHTML("beforeend", "\n\n      <section>\n      <h3>Description of ".concat(book.title, "</h3>\n      <figure class=\"mainImage\"> \n      <img  src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n      </a>\n      <figcaption>\n      ").concat(book.alt, "\n      <strong>Image Source: </strong> \n      <a class=\"external\" href=\"").concat(book.imgLink, "\">\n       ").concat(book.imgAuthor, "\n      </a>\n      <strong>License:</strong>\n      <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n      ").concat(book.imgLicense, "\n      </a>\n      </figcaption>\n     </figure>\n    \n      <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>\n      \n      <p id=\"beforeQuote\">What's mine is yours and what is yours is mine.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.  Your brother- no, no brother; yet the son- Yet not the son; I will not call him son Of him I was about to call his father- Hath heard your praises; and this night he means To burn the lodging where you use to lie, And you within it.  I think he be transform'd into a beast; For I can nowhere find him like a man. Invest me in my motley; give me leave To speak my mind, and I will through and through Cleanse the foul body of th' infected world, If they will patiently receive my medicine. Hast any philosophy in thee, shepherd?</p>\n      \n      \n      \n      <p>It is meat and drink to me to see a clown:  This is no place; this house is but a butchery; Abhor it, fear it, do not enter it. Well then, if ever I thank any man, I'll thank you; but that they call compliment is like th' encounter of two dog-apes; and when a man thanks me heartily, methinks have given him a penny, and he renders me the beggarly thanks. </p>\n      \n      </section>\n      "));
 
       if (book.quote) {
         var beforeQuote = document.getElementById("beforeQuote");
@@ -552,7 +552,7 @@ function detailBook(bookList, bookSelector) {
     }
   }
 }
-},{}],"../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -580,7 +580,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34411" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40239" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -756,5 +756,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/webtools.e31bb0bc.js.map

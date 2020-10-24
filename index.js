@@ -545,8 +545,8 @@ function detailBook(bookList, bookSelector){
 
       <section>
       <h3>Description of ${book.title}</h3>
-      <figure> 
-      <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
+      <figure class="mainImage"> 
+      <img  src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
       </a>
       <figcaption>
       ${book.alt}

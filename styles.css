@@ -205,15 +205,6 @@ label input{
 /* tablet version */
 
 @media(min-width:700px){
-
-
-    /* dev */
-    *{
-        
-    }  
-      body{
-        background-color: lightgreen;
-    }
     /* general */
 
 
@@ -248,7 +239,6 @@ nav h1 {
 }
 #nav-options ul{
     font-size: 20px;
-    /* list-style: none;  */
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -281,14 +271,6 @@ nav h1 {
 }
 
 /* images */
-/* 
-
-
-
-img{
-    width: 80vw;
-    max-width: 500px;
-} */
 
 
 
@@ -322,7 +304,7 @@ body section p+figure +p+p{
 }
 figcaption{
     font-size:10px;
-    /* line-height: 15px; */
+    padding:10px;
 }
 
 .mainImage{
@@ -337,62 +319,15 @@ figcaption{
 
 
 
-#index main{
 
-}
-
-#index section:nth-of-type(2){
-    text-align: center;
-}
-/* #index section+section{
- border:1px solid red;
- max-width: 700px;
- text-align: center;
-} */
 #index iframe{
-   border:10px solid green;
    margin: auto 40px;
 }
 #index h3{
     text-align: left;
 }
 
-/* general table setting */
-/* 
-table{
-    border-collapse:collapse
-}
-td,th{
-    padding:5px;
-    border:1px solid #000;
-}
-table caption{
-    color:#433D86;
-    background-color:#C0BBFF;
-    border: 1px solid #433D86;
-}
- */
 
-
-
-/* .inlineFlex {
-    text-align: center;
-    width:100vw;
-}
-.inlineFlex section{
-width:80vw;
-margin: auto;
-
-}
-#index .inlineFlex h3{
-    text-align: center;
-}
-#index .inlineFlex figure{
-    text-align: center;
-}
-#index .inlineFlex form{
-    margin: auto;
-} */
 
 /* footer */
 #goUp{
@@ -400,11 +335,8 @@ margin: auto;
  }
  
  footer{
-    /* font-size: 12px; */
-    /* background-color:#000;
-    color:#C0BBFF; */
+
     padding:10px 10px 50px 10px ;
-    /* margin-top: 50px; */
 }
 
 
@@ -433,11 +365,38 @@ margin: auto;
 
 
 /* personal life */
-#personalLife figure:nth-of-type(1){
-    border:1px solid blue;
-    width:300px;
-    position:relative;
+#personalLife .mainImage{
+float:left;
+top:0;
+margin:0px 10px;
 }
+#personalLife section blockquote+p+figure+p+blockquote+p+figure{
+    float:left;
+}
+
+
+
+/* Detail Book */
+
+#detailFiction .mainImage, #detailNonFiction .mainImage{
+width: 300px;
+height:350px;
+top:0;
+margin: 10px 10px 10px 10px;
+}
+#detailFiction .mainImage img,#detailNonFiction .mainImage img{
+width: 250px;
+height:300px;
+}
+
+.inlineFlex{
+    text-align: center;
+}
+.inlineFlex section{
+    margin:auto;
+}
+
+
 }
 
 
@@ -451,14 +410,36 @@ margin: auto;
 
 /* pc / laptop */
 
-@media (min-width:925px){
-    body{
-        background-color: red;
-    }
+@media (min-width:1200px){
+
     #bookDisplay figure{
 
         width:250px;
         padding:20px;
         margin:auto;
     }
+    .inlineFlex{
+        position:relative;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .inlineFlex section{
+        width:40vw;
+        height: 100%;
+    }
+iframe{
+   
+        width:35vw;
+        height: 25vw;
+    }
+    #personalLife section blockquote+p+figure+p+blockquote+p+figure{
+    top: 0;
+    }
+    #personalLife section+section{
+        margin-top: 10vw;
+    }
+    p+figure+p+p{
+        margin-bottom: 10vw;
+    }
+
 }
