@@ -23,6 +23,7 @@ main {
   padding:5px;
   border-radius: 10%;
   margin-top: 10px;
+  cursor:pointer ;
 
 }
 cite{
