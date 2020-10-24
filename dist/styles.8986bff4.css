@@ -400,13 +400,6 @@ height:300px;
 }
 
 
-/* .inlineFlex{
-    position:relative;
-    display: inline-flex;
-    flex-wrap: wrap;
-} */
-
-
 
 /* pc / laptop */
 
@@ -441,6 +434,9 @@ iframe{
     }
     p+figure+p+p{
         margin-bottom: 10vw;
+    }
+    #personalLife p+figure+p+p{
+        margin-bottom: auto;
     }
 
 }
