@@ -59,7 +59,8 @@ blockquote a {
 /* general table setting */
 
 table{
-    border-collapse:collapse
+    border-collapse:collapse;
+    margin:auto;
 }
 td,th{
     padding:5px;
@@ -73,10 +74,10 @@ table caption{
 
 /* Iframe video setting */
 iframe{
-    width: 90vw;
+    width: 80vw;
     height:50vw;
-    max-width: 600px;
-    max-height: 400px;
+    /* max-width: 600px;
+    max-height: 400px; */
 }
 
 
@@ -125,7 +126,6 @@ nav h1 {
 /* images: */
 img{
     width: 80vw;
-    max-width: 500px;
 }
 
 figure {
@@ -179,6 +179,7 @@ label input{
     margin:10px;
 }
 
+
 /* index */
 
 
@@ -189,15 +190,43 @@ label input{
     height: 80vw;
 }
 
+
+/* ********************************************
+**********************************************
+************************************************
+************************************************
+***********************************************
+***********************************************
+*******************************************
+***********************************************
+*********************************************
+********************************************
+*******************************************/
 /* tablet version */
 
 @media(min-width:700px){
 
-    /* general */
 
-    body{
+    /* dev */
+    *{
+        
+    }  
+      body{
         background-color: lightgreen;
     }
+    /* general */
+
+
+    p{
+        font-size: 20px;
+    }
+    h3{
+        font-size:25px;
+    }
+    h2{
+        font-size: 30px;
+    }
+
 
     /* header */
 
@@ -219,7 +248,7 @@ nav h1 {
 }
 #nav-options ul{
     font-size: 20px;
-    list-style: none; 
+    /* list-style: none;  */
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -253,15 +282,37 @@ nav h1 {
 
 /* images */
 /* 
+
+
+
 img{
     width: 80vw;
     max-width: 500px;
 } */
 
-figure {
-    margin:0;
-    text-align: left;
+
+
+img{
+
+   width: 300px;
+
 }
+
+
+body section p +figure{
+
+    position:relative;
+    width: 320px;
+    float: right;
+
+
+
+}
+body section p+figure +p+p{
+    margin-top: 30px;
+}
+
+
 .image-circle{
     border-radius: 0%;
     width: 200px;
@@ -271,17 +322,145 @@ figure {
 }
 figcaption{
     font-size:10px;
-    line-height: 15px;
+    /* line-height: 15px; */
+}
+
+.mainImage{
+    position: relative;
+    float: right;
+    margin:10px 10px 120px 10px;
+    top:130px;
+
 }
 
 /* index */
-#index figure:nth-of-type(1){
-    position: relative;
-    float: right;
-    margin:10px 10px 100px 10px;
-    top:100px;
+
+
+
+#index main{
 
 }
+
+#index section:nth-of-type(2){
+    text-align: center;
+}
+/* #index section+section{
+ border:1px solid red;
+ max-width: 700px;
+ text-align: center;
+} */
+#index iframe{
+   border:10px solid green;
+   margin: auto 40px;
+}
+#index h3{
+    text-align: left;
+}
+
+/* general table setting */
+/* 
+table{
+    border-collapse:collapse
+}
+td,th{
+    padding:5px;
+    border:1px solid #000;
+}
+table caption{
+    color:#433D86;
+    background-color:#C0BBFF;
+    border: 1px solid #433D86;
+}
+ */
+
+
+
+/* .inlineFlex {
+    text-align: center;
+    width:100vw;
+}
+.inlineFlex section{
+width:80vw;
+margin: auto;
+
+}
+#index .inlineFlex h3{
+    text-align: center;
+}
+#index .inlineFlex figure{
+    text-align: center;
+}
+#index .inlineFlex form{
+    margin: auto;
+} */
+
+/* footer */
+#goUp{
+    font-size: 50px;
+ }
+ 
+ footer{
+    /* font-size: 12px; */
+    /* background-color:#000;
+    color:#C0BBFF; */
+    padding:10px 10px 50px 10px ;
+    /* margin-top: 50px; */
+}
+
+
+/* Book List */
+
+#bookDisplay{
+    width: 95vw;
+    display:inline-flex;
+    flex-wrap: wrap;
+
+}
+#bookDisplay section{
+    text-align: center;
+
+}
+#bookDisplay figure{
+    width:250px;
+    padding:20px;
+    margin:2.5vw;
+}
+#bookDisplay figure img{
+    width:250px;
+    height:300px;
+
+}
+
+
+/* personal life */
+#personalLife figure:nth-of-type(1){
+    border:1px solid blue;
+    width:300px;
+    position:relative;
+}
+}
+
+
+/* .inlineFlex{
+    position:relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+} */
+
+
+
+/* pc / laptop */
+
+@media (min-width:925px){
+    body{
+        background-color: red;
+    }
+    #bookDisplay figure{
+
+        width:250px;
+        padding:20px;
+        margin:auto;
+    }
 }
 
 /*# sourceMappingURL=/styles.8986bff4.css.map */

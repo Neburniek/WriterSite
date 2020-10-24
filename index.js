@@ -1,77 +1,4 @@
-// main title change
-const mainTitle= document.getElementById("mainTitle");
-const h2Tag = document.getElementsByTagName("h2");
-// mainTitle.textContent=h2Tag[0].textContent;
-
-
-
-// Header creation
-
-const bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin",`
-<header>
-        <nav>
-            <div id="title">
-                <a href="./index.html">
-                    <p>Fan site of</p>
-                    <h1>Chuck Palahniuk</h1>
-                </a>
-            </div>
-            <div id="nav-options">
-                <ul>
-                    <li><a id="personalLife" href="./personalLife.html"> Personal life </a></li>
-                    <li><a id="fictionBooks" href="./fictionBooks.html"> Fiction books </a></li>
-                    <li><a id="nonFiction" href="./nonFiction.html"> Non-fiction books </a></li>
-                </ul>
-            </div>
-        </nav> 
-    </header>
-    
-
-`);
-
-
-
-if(document.getElementsByTagName("h2")){
-  
-const personalLife= document.getElementById("personalLife");
-const fictionBooks = document.getElementById("fictionBooks");
-const nonFiction = document.getElementById("nonFiction");
-
-if(h2Tag[0].textContent === "Personal Life"){
-  personalLife.classList.add("here");
-}else if(h2Tag[0].textContent === "Fiction Books"){
-  fictionBooks.classList.add("here");
-}else if(h2Tag[0].textContent === "Non-Fiction Books"){
-  nonFiction.classList.add("here");
-}
-}
-
-
-
-// footer creation
-const mainTag = document.getElementsByTagName("main");
-
-mainTag[0].insertAdjacentHTML("afterend",`
-<footer>
-<ul>
-    <li><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</li>
-    <li><a href="./privacy.html">Privacy Policy</a></li>
-</ul>
-
-
-
-
-<a href="#title"><i id="goUp" class="fas fa-arrow-up"></i></a>
-</footer>
-
-`);
-
-
-
-//list of books
-
-
+// Book Objects
 
 const fictionBookList = [
   { title: "Fight Club",
@@ -430,6 +357,83 @@ const fictionBookList = [
   //       year: "",
   //       alt: "",
   //     }
+
+
+
+
+
+
+
+
+// main title change
+const mainTitle= document.getElementById("mainTitle");
+const h2Tag = document.getElementsByTagName("h2");
+// mainTitle.textContent=h2Tag[0].textContent;
+
+
+
+// Header creation
+
+const bodyTag = document.getElementsByTagName("body");
+bodyTag[0].insertAdjacentHTML("afterbegin",`
+<header>
+        <nav>
+            <div id="title">
+                <a href="./index.html">
+                    <p>Fan site of</p>
+                    <h1>Chuck Palahniuk</h1>
+                </a>
+            </div>
+            <div id="nav-options">
+                <ul>
+                    <li><a id="personalLife" href="./personalLife.html"> Personal life </a></li>
+                    <li><a id="fictionBooks" href="./fictionBooks.html"> Fiction books </a></li>
+                    <li><a id="nonFiction" href="./nonFiction.html"> Non-fiction books </a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    
+
+`);
+
+// navbar selector
+
+if(document.getElementsByTagName("h2")){
+  
+const personalLife= document.getElementById("personalLife");
+const fictionBooks = document.getElementById("fictionBooks");
+const nonFiction = document.getElementById("nonFiction");
+
+if(h2Tag[0].textContent === "Personal Life"){
+  personalLife.classList.add("here");
+}else if(h2Tag[0].textContent === "Fiction Books"){
+  fictionBooks.classList.add("here");
+}else if(h2Tag[0].textContent === "Non-Fiction Books"){
+  nonFiction.classList.add("here");
+}
+}
+
+
+
+// footer creation
+const mainTag = document.getElementsByTagName("main");
+
+mainTag[0].insertAdjacentHTML("afterend",`
+<footer>
+<ul>
+    <li><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</li>
+    <li><a href="./privacy.html">Privacy Policy</a></li>
+</ul>
+
+
+
+
+<a href="#title"><i id="goUp" class="fas fa-arrow-up"></i></a>
+</footer>
+
+`);
+
 
 
   // book Display

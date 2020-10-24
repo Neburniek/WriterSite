@@ -118,32 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-// main title change
-var mainTitle = document.getElementById("mainTitle");
-var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[0].textContent;
-// Header creation
-
-var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n    \n\n");
-
-if (document.getElementsByTagName("h2")) {
-  var personalLife = document.getElementById("personalLife");
-  var fictionBooks = document.getElementById("fictionBooks");
-  var nonFiction = document.getElementById("nonFiction");
-
-  if (h2Tag[0].textContent === "Personal Life") {
-    personalLife.classList.add("here");
-  } else if (h2Tag[0].textContent === "Fiction Books") {
-    fictionBooks.classList.add("here");
-  } else if (h2Tag[0].textContent === "Non-Fiction Books") {
-    nonFiction.classList.add("here");
-  }
-} // footer creation
-
-
-var mainTag = document.getElementsByTagName("main");
-mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); //list of books
-
+// Book Objects
 var fictionBookList = [{
   title: "Fight Club",
   imgURL: "https://live.staticflickr.com/2291/2320868352_c577a53c9d.jpg",
@@ -454,7 +429,32 @@ var nonFictionBookList = [{
 //       year: "",
 //       alt: "",
 //     }
-// book Display
+// main title change
+
+var mainTitle = document.getElementById("mainTitle");
+var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[0].textContent;
+// Header creation
+
+var bodyTag = document.getElementsByTagName("body");
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1>\n                </a>\n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"personalLife\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n    \n\n"); // navbar selector
+
+if (document.getElementsByTagName("h2")) {
+  var personalLife = document.getElementById("personalLife");
+  var fictionBooks = document.getElementById("fictionBooks");
+  var nonFiction = document.getElementById("nonFiction");
+
+  if (h2Tag[0].textContent === "Personal Life") {
+    personalLife.classList.add("here");
+  } else if (h2Tag[0].textContent === "Fiction Books") {
+    fictionBooks.classList.add("here");
+  } else if (h2Tag[0].textContent === "Non-Fiction Books") {
+    nonFiction.classList.add("here");
+  }
+} // footer creation
+
+
+var mainTag = document.getElementsByTagName("main");
+mainTag[0].insertAdjacentHTML("afterend", "\n<footer>\n<ul>\n    <li><span id=\"copyrightDate\"></span> &#169; Rub\xE9n Puerta C\xF3rdoba</li>\n    <li><a href=\"./privacy.html\">Privacy Policy</a></li>\n</ul>\n\n\n\n\n<a href=\"#title\"><i id=\"goUp\" class=\"fas fa-arrow-up\"></i></a>\n</footer>\n\n"); // book Display
 
 if (document.getElementById("bookDisplay")) {
   var _bookDisplay = document.getElementById("bookDisplay");
@@ -552,7 +552,7 @@ function detailBook(bookList, bookSelector) {
     }
   }
 }
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -580,7 +580,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42219" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34411" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -756,5 +756,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/webtools.e31bb0bc.js.map
