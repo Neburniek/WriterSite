@@ -425,6 +425,8 @@ iframe{
    
         width:35vw;
         height: 25vw;
+        max-width: 800px;
+        max-height: 600px;
     }
     #personalLife section blockquote+p+figure+p+blockquote+p+figure{
     top: 0;
