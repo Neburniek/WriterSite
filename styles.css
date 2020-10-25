@@ -190,7 +190,7 @@ label input{
     overflow:hidden;
 }
 #index footer{
-    opacity: 90%;
+    opacity: 0.9;
     position:fixed;
     bottom:0;
     width: 100%;
@@ -201,7 +201,7 @@ label input{
     position: absolute;
     top:30%;
     width: 100%;
-    opacity: 85%
+    opacity: 0.85;
 }
 #index #title p{
     text-align: center;
