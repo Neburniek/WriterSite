@@ -187,6 +187,7 @@ label input{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    overflow:hidden;
 }
 #index footer{
     opacity: 90%;
