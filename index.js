@@ -358,13 +358,6 @@ const fictionBookList = [
   //       alt: "",
   //     }
 
-
-
-
-
-
-
-
 // main title change
 const mainTitle= document.getElementById("mainTitle");
 const h2Tag = document.getElementsByTagName("h2");
@@ -386,7 +379,8 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             </div>
             <div id="nav-options">
                 <ul>
-                    <li><a id="personalLife" href="./personalLife.html"> Personal life </a></li>
+                    <li><a id="chuck" href="./writer.html"> Chuck Palahniuk </a></li>
+                    <li><a id="personal" href="./personalLife.html"> Personal life </a></li>
                     <li><a id="fictionBooks" href="./fictionBooks.html"> Fiction books </a></li>
                     <li><a id="nonFiction" href="./nonFiction.html"> Non-fiction books </a></li>
                 </ul>
@@ -401,9 +395,12 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
 
 if(document.getElementsByTagName("h2")){
   
-const personalLife= document.getElementById("personalLife");
+const personalLife= document.getElementById("personal");
 const fictionBooks = document.getElementById("fictionBooks");
 const nonFiction = document.getElementById("nonFiction");
+const writer = document.getElementById("chuck");
+
+console.log(personalLife);
 
 if(h2Tag[0].textContent === "Personal Life"){
   personalLife.classList.add("here");
@@ -411,6 +408,8 @@ if(h2Tag[0].textContent === "Personal Life"){
   fictionBooks.classList.add("here");
 }else if(h2Tag[0].textContent === "Non-Fiction Books"){
   nonFiction.classList.add("here");
+}else if(h2Tag[0].textContent === "Chuck Palahniuk"){
+  writer.classList.add("here");
 }
 }
 
