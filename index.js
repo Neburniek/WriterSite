@@ -457,7 +457,7 @@ if(document.getElementById("detailFiction")){
 
 // External icon after external link class external
 
-const externalLink = document.querySelectorAll(".external");
+const externalLink = document.getElementsByClassName("external");
 for(let x=0; x<externalLink.length; x++){
     externalLink[x].setAttribute("target", "_blank")
     externalLink[x].insertAdjacentHTML("beforeend"," <i class='fas fa-external-link-alt'></i>");
