@@ -379,7 +379,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             </div>
             <div id="nav-options">
                 <ul>
-                    <li><a id="chuck" href="./writer.html"> Chuck Palahniuk </a></li>
+                    <li><a id="chuck" href="./home.html"> Home </a></li>
                     <li><a id="personal" href="./personalLife.html"> Personal life </a></li>
                     <li><a id="fictionBooks" href="./fictionBooks.html"> Fiction books </a></li>
                     <li><a id="nonFiction" href="./nonFiction.html"> Non-fiction books </a></li>
