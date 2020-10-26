@@ -400,7 +400,6 @@ const fictionBooks = document.getElementById("fictionBooks");
 const nonFiction = document.getElementById("nonFiction");
 const writer = document.getElementById("chuck");
 
-console.log(personalLife);
 
 if(h2Tag[0].textContent === "Personal Life"){
   personalLife.classList.add("here");
