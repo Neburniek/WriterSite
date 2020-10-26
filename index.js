@@ -457,7 +457,7 @@ if(document.getElementById("detailFiction")){
 
 // External icon after external link class external
 
-const externalLink = document.getElementsByClassName("external");
+const externalLink = document.querySelectorAll(".external");
 for(let x=0; x<externalLink.length; x++){
     externalLink[x].setAttribute("target", "_blank")
     externalLink[x].insertAdjacentHTML("beforeend"," <i class='fas fa-external-link-alt'></i>");
@@ -587,7 +587,7 @@ function detailBook(bookList, bookSelector){
         <section> 
             <figure>
             <h3>${book.videoTitle}</h3>
-            <iframe src="${book.videoURL}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="${book.videoURL}" title="${book.videoCaption}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption>${book.videoCaption}</figcaption>
           </figure>
           </section>
