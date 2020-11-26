@@ -374,8 +374,11 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             <div id="title">
                 <a href="./index.html">
                     <p>Fan site of</p>
-                    <h1>Chuck Palahniuk</h1>
-                </a>
+                    <h1>Chuck Palahniuk</h1> 
+                    
+                    <img id="logoNav" src="/logo.86ce68ea.svg" alt="Chuck Palahniuk Fan Site Logo">
+               </a>
+                
             </div>
             <div id="nav-options">
                 <ul>
@@ -387,6 +390,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
             </div>
         </nav> 
     </header>
+
     
 
 `);
@@ -420,9 +424,16 @@ const mainTag = document.getElementsByTagName("main");
 mainTag[0].insertAdjacentHTML("afterend",`
 <footer>
 <ul>
+    <li id="footerAdd"> 
+    <a href="./index.html">
+    <div></div> 
+    <p>    Chuck Palahniuk</p>
+    </a>
+    </li>
     <li><span id="copyrightDate"></span> &#169; Rubén Puerta Córdoba</li>
     <li><a href="./privacy.html">Privacy Policy</a></li>
 </ul>
+
 
 
 
