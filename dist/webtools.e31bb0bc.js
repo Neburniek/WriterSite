@@ -436,7 +436,7 @@ var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[
 // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1> \n                    \n                    <img id=\"logoNav\" src=\"/logo.86ce68ea.svg\" alt=\"Chuck Palahniuk Fan Site Logo\">\n               </a>\n                \n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"chuck\" href=\"./home.html\"> Home </a></li>\n                    <li><a id=\"personal\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n\n    \n\n"); // navbar selector
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1> \n                    \n                    <img id=\"logoNav\" src=\"./logo.44880c26.svg\" alt=\"Chuck Palahniuk Fan Site Logo\">\n               </a>\n                \n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"chuck\" href=\"./home.html\"> Home </a></li>\n                    <li><a id=\"personal\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n\n    \n\n"); // navbar selector
 
 if (document.getElementsByTagName("h2")) {
   var personalLife = document.getElementById("personal");
@@ -583,7 +583,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34063" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35023" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -376,7 +376,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
                     <p>Fan site of</p>
                     <h1>Chuck Palahniuk</h1> 
                     
-                    <img id="logoNav" src="/logo.86ce68ea.svg" alt="Chuck Palahniuk Fan Site Logo">
+                    <img id="logoNav" src="./logo.44880c26.svg" alt="Chuck Palahniuk Fan Site Logo">
                </a>
                 
             </div>
