@@ -436,7 +436,7 @@ var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[
 // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
-bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1> \n                    \n                    <img id=\"logoNav\" src=\"./logo.44880c26.svg\" alt=\"Chuck Palahniuk Fan Site Logo\">\n               </a>\n                \n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"chuck\" href=\"./home.html\"> Home </a></li>\n                    <li><a id=\"personal\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n\n    \n\n"); // navbar selector
+bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1> \n                    \n                    <img id=\"logoNav\" src=\"https://competent-lamarr-8bb366.netlify.app/logo.44880c26.svg\" alt=\"Chuck Palahniuk Fan Site Logo\">\n               </a>\n                \n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"chuck\" href=\"./home.html\"> Home </a></li>\n                    <li><a id=\"personal\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n\n    \n\n"); // navbar selector
 
 if (document.getElementsByTagName("h2")) {
   var personalLife = document.getElementById("personal");
@@ -508,7 +508,7 @@ if (document.getElementById("Unlock")) {
 
 function displayBook(book) {
   var link = book.title.charAt(0).toLowerCase() + book.title.slice(1).split(' ').join('');
-  bookDisplay.insertAdjacentHTML("beforeend", "\n  \n  <div>\n \n     <figure> \n     <a href=\"".concat(link, ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </figure>\n  </div>\n  \n  \n  "));
+  bookDisplay.insertAdjacentHTML("beforeend", "\n\n \n     <picture> \n     <a href=\"".concat(link, ".html\">\n     <h4>").concat(book.title, "</h4>\n     <img src=\"").concat(book.imgURL, "\" alt=\"").concat(book.alt, "\" title=\"").concat(book.alt).concat(book.title, "\" >\n     </a>\n     <figcaption>\n     Book publication year: ").concat(book.year, "\n     <strong>Image Source: </strong> \n     <a class=\"external\" href=\"").concat(book.imgLink, "\">\n      ").concat(book.imgAuthor, "\n     </a>\n     <strong>License:</strong>\n     <a class=\"external\" href=\"").concat(book.imgLicenseURL, "\">\n     ").concat(book.imgLicense, "\n     </a>\n     </figcaption>\n    </picture>\n  \n  \n  "));
 }
 
 function detailBook(bookList, bookSelector) {
@@ -583,7 +583,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35023" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42669" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

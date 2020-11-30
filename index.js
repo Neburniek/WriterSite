@@ -376,7 +376,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
                     <p>Fan site of</p>
                     <h1>Chuck Palahniuk</h1> 
                     
-                    <img id="logoNav" src="./logo.44880c26.svg" alt="Chuck Palahniuk Fan Site Logo">
+                    <img id="logoNav" src="https://competent-lamarr-8bb366.netlify.app/logo.44880c26.svg" alt="Chuck Palahniuk Fan Site Logo">
                </a>
                 
             </div>
@@ -505,10 +505,9 @@ function displayBook(book){
 
 const  link= book.title.charAt(0).toLowerCase() + book.title.slice(1) .split(' ').join('');
   bookDisplay.insertAdjacentHTML("beforeend",`
-  
-  <div>
+
  
-     <figure> 
+     <picture> 
      <a href="${link}.html">
      <h4>${book.title}</h4>
      <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
@@ -524,8 +523,7 @@ const  link= book.title.charAt(0).toLowerCase() + book.title.slice(1) .split(' '
      ${book.imgLicense}
      </a>
      </figcaption>
-    </figure>
-  </div>
+    </picture>
   
   
   `)
