@@ -2,9 +2,9 @@
 
 const fictionBookList = [
   { title: "Fight Club",
-    imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_01_sm.a701879e.jpg",
-    imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_01_md.e350a00a.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_01_lg.222fca1a.png",
+    imgURL: "./fb_01_sm.a701879e.jpg",
+    imgMd:"./fb_01_md.e350a00a.jpg",
+        imgLg:"./fb_01_lg.222fca1a.png",
     imgAuthor: "K嘛 / Flickr",
     imgLink:"https://www.flickr.com/photos/kmar/2320868352/in/photolist-bp1QF-2js1E3B-2iX9Zb5-F5JP2d-KpD91P-b6myET-2iYxana-2go7vCg-4x64iA-JnzG8z-mXZpn1-2iAfb22-Ku7ATr-25G5xy-TnoBDA-87ybiz-86TQPG-fe2AwY-7adQdN-88KgQU-7aa1Ea-2a6c8ci-jvxk6-2uTjQX-26jYJKN-Q4hJsW-R8qBfK-92Jvhw-qkPrF4-27JZeDN-bqZ9Hm-8DNuSJ-7yuQFL-7cfw5Y-rm4v7S-po7qyH-S7a8BV-4KKujS-m2BKPn-8nHegF-5E8JFK-7Kwe9V-oLFx9v-611ffi-9SZK3p-dEDe3A-8nLmMh-mGUQGF-YRS7Lf-ea7oqa",
     imgLicense: "(CC BY-NC-ND 2.0)",
@@ -18,9 +18,9 @@ const fictionBookList = [
 
     
   }, {title:"Survivor",
-      imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_02_sm.c4c014e4.jpg",
-      imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_02_md.d8152c5d.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_02_lg.6a1d49f9.png",
+      imgURL: "./fb_02_sm.c4c014e4.jpg",
+      imgMd:"./fb_02_md.d8152c5d.jpg",
+        imgLg:"./fb_02_lg.6a1d49f9.png",
       imgAuthor: "Kristen Withers / Flickr",
       imgLink: "https://www.flickr.com/photos/kris10withers/6190753659/in/photostream/",
       imgLicense: "(CC BY-NC 2.0)",
@@ -35,9 +35,9 @@ const fictionBookList = [
 
       {
         title: "Invisible Monsters",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_03_sm.01b0cd8f.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_03_md.b6bbceb4.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_03_lg.15250cdb.png",
+        imgURL: "./fb_03_sm.01b0cd8f.jpg",
+        imgMd:"./fb_03_md.b6bbceb4.jpg",
+        imgLg:"./fb_03_lg.15250cdb.png",
         imgAuthor: "Kristen Withers / Flickr",
         imgLink: "https://www.flickr.com/photos/kris10withers/6190754069/",
         imgLicense:"(CC BY-NC 2.0)",
@@ -52,9 +52,9 @@ const fictionBookList = [
 
       {
         title: "Choke",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_04_sm.065a6109.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_04_md.96294c9d.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_04_lg.2467dd35.png",
+        imgURL: "./fb_04_sm.065a6109.jpg",
+        imgMd:"./fb_04_md.96294c9d.jpg",
+        imgLg:"./fb_04_lg.2467dd35.png",
         imgAuthor: "Kristen Withers / Flickr",
         imgLink: "https://www.flickr.com/photos/kris10withers/6190754229/",
         imgLicense:"(CC BY-NC 2.0)",
@@ -69,9 +69,9 @@ const fictionBookList = [
 
       {
         title: "Lullaby",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_05_sm.3d1cfdf6.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_05_md.daa87c37.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_05_lg.02fb798a.png",
+        imgURL: "./fb_05_sm.3d1cfdf6.jpg",
+        imgMd:"./fb_05_md.daa87c37.jpg",
+        imgLg:"./fb_05_lg.02fb798a.png",
         imgAuthor: "Kristen Withers / Flickr",
         imgLink: "https://www.flickr.com/photos/kris10withers/6191271450/in/album-72157627770293394/",
         imgLicense:"(CC BY-NC 2.0)",
@@ -87,9 +87,9 @@ const fictionBookList = [
 
       {
         title: "Diary",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
         imgLicense:"(CC BY-NC-ND 2.0)",
@@ -104,9 +104,9 @@ const fictionBookList = [
 
       {
         title: "Haunted",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_07_sm.8c18dc68.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_07_md.db4dfb2c.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_07_lg.92315c31.png",
+        imgURL: "./fb_07_sm.8c18dc68.jpg",
+        imgMd:"./fb_07_md.db4dfb2c.jpg",
+        imgLg:"./fb_07_lg.92315c31.png",
         imgAuthor: "Tnarik Innael / Flickr",
         imgLink: "https://www.flickr.com/photos/tnarik/417417780/",
         imgLicense:"(CC BY-SA 2.0)",
@@ -120,9 +120,9 @@ const fictionBookList = [
       },
       {
         title: "Rant",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_08_sm.8aa2ccc7.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_08_md.05141d85.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_08_lg.84f304cd.png",
+        imgURL: "./fb_08_sm.8aa2ccc7.jpg",
+        imgMd:"./fb_08_md.05141d85.jpg",
+        imgLg:"./fb_08_lg.84f304cd.png",
         imgAuthor: "Hugo Chisholm / Flickr",
         imgLink: "https://www.flickr.com/photos/evilmutent/4173057317/",
         imgLicense: "(CC BY-SA 2.0) ",
@@ -136,9 +136,9 @@ const fictionBookList = [
       },
       {
         title: "Snuff",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_09_sm.9ba078e3.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_09_md.ee37cae8.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_09_lg.ce9d7cd7.png",
+        imgURL: "./fb_09_sm.9ba078e3.jpg",
+        imgMd:"./fb_09_md.ee37cae8.jpg",
+        imgLg:"./fb_09_lg.ce9d7cd7.png",
         imgAuthor: "Sal / Flickr",
         imgLink: "https://www.flickr.com/photos/wondermonkey2k/2512624124/",
         imgLicense: "(CC BY-NC-ND 2.0)",
@@ -150,9 +150,9 @@ const fictionBookList = [
       },
       {
         title: "Pygmy",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_10_sm.702a28ac.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_10_md.4b00980b.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_10_lg.94d272a9.png",
+        imgURL: "./fb_10_sm.702a28ac.jpg",
+        imgMd:"./fb_10_md.4b00980b.jpg",
+        imgLg:"./fb_10_lg.94d272a9.png",
         imgAuthor: "Pesky Librarians / Flickr",
         imgLink: "https://www.flickr.com/photos/peskylibrary/4158040651/",
         imgLicense: "(CC BY-NC-ND 2.0)",
@@ -164,9 +164,9 @@ const fictionBookList = [
       },
       {
         title: "Tell All",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_11_sm.cccd9eed.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_11_md.b89edcb0.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_11_lg.6d169f7f.png",
+        imgURL: "./fb_11_sm.cccd9eed.jpg",
+        imgMd:"./fb_11_md.b89edcb0.jpg",
+        imgLg:"./fb_11_lg.6d169f7f.png",
         imgAuthor: "federico novaro / Flickr",
         imgLink: "https://www.flickr.com/photos/federiconovaro/6066435840",
         imgLicense: "(CC BY-NC-SA 2.0)",
@@ -181,9 +181,9 @@ const fictionBookList = [
       },
       {
         title: "Damned",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_12_sm.b97e36a9.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_12_md.cd8d089b.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_12_lg.243e22f3.png",
+        imgURL: "./fb_12_sm.b97e36a9.jpg",
+        imgMd:"./fb_12_md.cd8d089b.jpg",
+        imgLg:"./fb_12_lg.243e22f3.png",
         imgAuthor: "Emiliano / Flickr",
         imgLink: "https://www.flickr.com/photos/taskforsome/9254011665/",
         imgLicense: "(CC BY-SA 2.0)",
@@ -198,9 +198,9 @@ const fictionBookList = [
       },
       {
         title: "Doomed",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_13_sm.3e20f818.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_13_md.5195c7a6.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_13_lg.af2ef436.png",
+        imgURL: "./fb_13_sm.3e20f818.jpg",
+        imgMd:"./fb_13_md.5195c7a6.jpg",
+        imgLg:"./fb_13_lg.af2ef436.png",
         imgAuthor: "Pesky Librarians / Flickr",
         imgLink: "https://www.flickr.com/photos/peskylibrary/10581759016/in/photolist-guNF4C-h85hhY",
         imgLicense: "(CC BY-NC-ND 2.0)",
@@ -214,9 +214,9 @@ const fictionBookList = [
       },
       {
         title: "Burnt Tongues",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "Adams K. / Flickr",
         imgLink: "https://www.flickr.com/photos/adamskev/1716382953/",
         imgLicense: "(CC BY-NC 2.0)",
@@ -228,9 +228,9 @@ const fictionBookList = [
       },
       {
         title: "Beautiful You",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "Platform",
         imgLink: "https://www.flickr.com/photos/ouplatform/5384227790/in/photolist-9cMzkC-b44RyH",
         imgLicense: "(CC BY-NC 2.0) ",
@@ -245,9 +245,9 @@ const fictionBookList = [
 
       {
         title: "Make Something Up",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
         imgLicense:"(CC BY-NC-ND 2.0)",
@@ -259,9 +259,9 @@ const fictionBookList = [
       },
       {
         title: "Fight Club 2",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_17_sm.bbb0d504.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_17_md.4af3bfc7.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_17_lg.da0a47ba.png",
+        imgURL: "./fb_17_sm.bbb0d504.jpg",
+        imgMd:"./fb_17_md.4af3bfc7.jpg",
+        imgLg:"./fb_17_lg.da0a47ba.png",
         imgAuthor: "Scott Ellis / Flickr",
         imgLink: "https://www.flickr.com/photos/vsellis/6624162303/",
         imgLicense: "(CC BY-SA 2.0)",
@@ -274,9 +274,9 @@ const fictionBookList = [
       },
       {
         title: "Bait",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
         imgLicense:"(CC BY-NC-ND 2.0)",
@@ -286,9 +286,9 @@ const fictionBookList = [
       },
       {
         title: "Legacy",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
         imgLicense:"(CC BY-NC-ND 2.0)",
@@ -301,9 +301,9 @@ const fictionBookList = [
       },
       {
         title: "Adjustment Day",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_20_sm.e09e0624.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_20_md.54bace39.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_20_lg.e1ded58f.png",
+        imgURL: "./fb_20_sm.e09e0624.jpg",
+        imgMd:"./fb_20_md.54bace39.jpg",
+        imgLg:"./fb_20_lg.e1ded58f.png",
         imgAuthor: "Pesky Librarians / flickr",
         imgLink: "https://www.flickr.com/photos/peskylibrary/40975530065/",
         imgLicense: "(CC BY-NC-ND 2.0)",
@@ -317,9 +317,9 @@ const fictionBookList = [
       },
       {
         title: "Fight Club 3",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/fb_17_sm.bbb0d504.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/fb_17_md.4af3bfc7.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/fb_17_lg.da0a47ba.png",
+        imgURL: "./fb_17_sm.bbb0d504.jpg",
+        imgMd:"./fb_17_md.4af3bfc7.jpg",
+        imgLg:"./fb_17_lg.da0a47ba.png",
         imgAuthor: "Scott Ellis / Flickr",
         imgLink: "https://www.flickr.com/photos/vsellis/6624162303/",
         imgLicense: "(CC BY-SA 2.0)",
@@ -332,9 +332,9 @@ const fictionBookList = [
       },
       {
         title: "The Invention of Sound",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/index_sm.598dd799.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/index_md.bb176651.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/index_lg.3d5490d8.png",
+        imgURL: "./index_sm.598dd799.jpg",
+        imgMd:"./index_md.bb176651.jpg",
+        imgLg:"./index_lg.3d5490d8.png",
         imgAuthor: "jana. / Flickr",
         imgLink: "https://www.flickr.com/photos/staticjana/4709527753/",
         imgLicense:"(CC BY-NC-ND 2.0)",
@@ -351,9 +351,9 @@ const fictionBookList = [
   const nonFictionBookList =[
           {
         title: "Fugitives and Refugees",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/nfb1_sm.39768b53.jpg",
-        imgMd: "https://competent-lamarr-8bb366.netlify.app/nfb1_md.630ef2c1.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/nfb1.88fc19e3.png",
+        imgURL: "./nfb1_sm.39768b53.jpg",
+        imgMd: "./nfb1_md.630ef2c1.jpg",
+        imgLg:"./nfb1.88fc19e3.png",
         imgAuthor: "susieredshores /Flickr",
         imgLink: "https://www.flickr.com/photos/saundersmecklem/468501794/in/photolist-Hpcg9-fgnxjQ-273RFUs",
         imgLicense: "(CC BY-NC-ND 2.0)",
@@ -363,9 +363,9 @@ const fictionBookList = [
       },
       {
         title: "Stranger than Fiction",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/nfb2_sm.4319dba7.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/nfb2_md.86175913.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/nfb2.4b161525.png",
+        imgURL: "./nfb2_sm.4319dba7.jpg",
+        imgMd:"./nfb2_md.86175913.jpg",
+        imgLg:"./nfb2.4b161525.png",
         imgAuthor: "Jessie Pearl / Flickr",
         imgLink: "https://www.flickr.com/photos/terwilliger911/3947970111/",
         imgLicense: "(CC BY 2.0)",
@@ -379,9 +379,9 @@ const fictionBookList = [
       },
       {
         title: "Consider This",
-        imgURL: "https://competent-lamarr-8bb366.netlify.app/nfb3_sm.c7fc3188.jpg",
-        imgMd:"https://competent-lamarr-8bb366.netlify.app/nfb3_md.31f19d61.jpg",
-        imgLg:"https://competent-lamarr-8bb366.netlify.app/nfb3.7c9c18d9.png",
+        imgURL: "./nfb3_sm.c7fc3188.jpg",
+        imgMd:"./nfb3_md.31f19d61.jpg",
+        imgLg:"./nfb3.7c9c18d9.png",
         imgAuthor: "Pesky Librarians / Flickr",
         imgLink: "https://www.flickr.com/photos/peskylibrary/49400748353/",
         imgLicense: "(CC BY-NC-ND 2.0) ",
@@ -396,17 +396,7 @@ const fictionBookList = [
 
   ]
 
-  // ,
-  //     {
-  //       title: "",
-  //       imgURL: "",
-  //       imgAuthor: "",
-  //       imgLink: "",
-  //       imgLicense: "",
-  //       imgLicenseURL: "",
-  //       year: "",
-  //       alt: "",
-  //     }
+
 
 // main title change
 const mainTitle= document.getElementById("mainTitle");
@@ -426,7 +416,7 @@ bodyTag[0].insertAdjacentHTML("afterbegin",`
                     <p>Fan site of</p>
                     <h1>Chuck Palahniuk</h1> 
                     
-                    <img id="logoNav" src="https://competent-lamarr-8bb366.netlify.app/logo.44880c26.svg" alt="Chuck Palahniuk Fan Site Logo">
+                    <img id="logoNav" src="./logo.44880c26.svg" alt="Chuck Palahniuk Fan Site Logo">
                </a>
                 
             </div>
