@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 4.2.0</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="4cb6259e-57de-4448-ae45-806e44244f7b"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="947c1b96-7611-434e-bcb8-cdf3bc329eb0"  >
+</g>
+<g transform="matrix(6.12 0 0 6.12 540 590.56)" id="478e2a82-94fb-4364-b6e0-c3928e1a3ccb"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(67,61,134); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 16.28 19.945 L 19.957 16.32 C 22.060000000000002 14.166 25.578000000000003 14.166 27.681 16.32 L 50.007000000000005 38.595 L 72.333 16.32 C 74.43599999999999 14.166 77.954 14.166 80.054 16.32 L 83.68 19.945 C 85.834 22.046 85.834 25.566000000000003 83.68 27.668 L 61.405 49.993 L 83.68 72.32 C 85.834 74.422 85.834 77.939 83.68 80.04299999999999 L 80.054 83.72099999999999 C 77.95400000000001 85.82 74.436 85.82 72.333 83.72099999999999 L 50.007 61.393 L 27.681 83.721 C 25.578 85.82000000000001 22.060000000000002 85.82000000000001 19.957 83.721 L 16.28 80.043 C 14.180000000000001 77.93900000000001 14.180000000000001 74.42200000000001 16.28 72.32000000000001 L 38.606 49.99300000000001 L 16.28 27.667 C 14.18 25.566 14.18 22.046 16.28 19.945 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 540 562.75)" style="" id="1f4bfbcf-dd96-4431-8263-ac16a198534a"  >
+		<text xml:space="preserve" font-family="Raleway" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(192,187,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-68.98" y="32.98" >CP</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 540 617.35)" style="" id="8dced4cf-3ca6-4d8e-a491-1758e172df8e"  >
+		<text xml:space="preserve" font-family="Alegreya" font-size="80" font-style="normal" font-weight="700" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(192,187,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-150.12" y="25.13" >Fansite</tspan></text>
+</g>
+</svg>
