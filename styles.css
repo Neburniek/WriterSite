@@ -159,14 +159,9 @@ figcaption{
     background-size:cover;
     background-position:expanded;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     animation-name: imageChanging;
-    animation-direction:alternate-reverse;
     animation-duration:30s;
-    animation-fill-mode:forwards;
     animation-iteration-count: infinite;
-    animation-play-state: running;
     animation-timing-function: ease-in-out;
 
 }
@@ -179,14 +174,9 @@ figcaption{
     background-size:cover;
     background-position:expanded;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     animation-name: nonFictionChanging;
-    animation-direction:alternate-reverse;
     animation-duration:15s;
-    animation-fill-mode:forwards;
     animation-iteration-count: infinite;
-    animation-play-state: running;
     animation-timing-function: ease-in-out;
 }
 #FictionShow{
@@ -197,14 +187,9 @@ figcaption{
     background-size:center;
     background-position:center;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     animation-name: fictionChanging;
-    animation-direction:alternate-reverse;
     animation-duration:60s;
-    animation-fill-mode:forwards;
     animation-iteration-count: infinite;
-    animation-play-state: running;
     animation-timing-function: ease-in-out;
 }
 @keyframes fictionChanging{

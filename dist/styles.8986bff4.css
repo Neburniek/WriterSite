@@ -159,19 +159,12 @@ figcaption{
     background-size:cover;
     background-position:expanded;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     -webkit-animation-name: imageChanging;
             animation-name: imageChanging;
-    animation-direction:alternate-reverse;
     -webkit-animation-duration:30s;
             animation-duration:30s;
-    -webkit-animation-fill-mode:forwards;
-            animation-fill-mode:forwards;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
 
@@ -185,19 +178,12 @@ figcaption{
     background-size:cover;
     background-position:expanded;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     -webkit-animation-name: nonFictionChanging;
             animation-name: nonFictionChanging;
-    animation-direction:alternate-reverse;
     -webkit-animation-duration:15s;
             animation-duration:15s;
-    -webkit-animation-fill-mode:forwards;
-            animation-fill-mode:forwards;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
 }
@@ -209,19 +195,12 @@ figcaption{
     background-size:center;
     background-position:center;
     background-repeat:no-repeat;
-    overflow:hidden;
-    transition:5s;
     -webkit-animation-name: fictionChanging;
             animation-name: fictionChanging;
-    animation-direction:alternate-reverse;
     -webkit-animation-duration:60s;
             animation-duration:60s;
-    -webkit-animation-fill-mode:forwards;
-            animation-fill-mode:forwards;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
 }
