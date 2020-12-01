@@ -141,13 +141,13 @@ figure {
     margin:0;
     text-align: center;
 }
-picture {
+figure {
     margin:20px;
     text-align: center;
     display:grid;
 }
 
-picture span{
+figure span{
     margin:5px;
     font-size:15px;
     line-height: 15px;
@@ -202,7 +202,7 @@ picture span{
     animation-timing-function: ease-in-out;
 }
 
-#bookDisplay picture a img:hover{
+#bookDisplay figure a img:hover{
     border:10px solid #C0BBFF;
     animation: shake 0.5s;
     animation-iteration-count:infinite;
@@ -543,7 +543,7 @@ label input{
 }
 
 /* book list */
-#bookDisplay picture img{
+#bookDisplay figure img{
     width: 80vw;
     height: 80vw;
     
@@ -654,7 +654,7 @@ img{
 }
 
 
-body section p +picture{
+body section p +figure{
 
     position:relative;
     width: 320px;
@@ -665,7 +665,7 @@ body section p +picture{
 }
 
 
-body section p+picture +p+p{
+body section p+figure +p+p{
     margin-top: 30px;
 }
 
@@ -764,12 +764,12 @@ body section p+picture +p+p{
     text-align: center;
 
 }
-#bookDisplay picture{
+#bookDisplay figure{
     width:250px;
     padding:20px;
     margin:2.5vw;
 }
-#bookDisplay picture img{
+#bookDisplay figure img{
     width:250px;
     height:300px;
 
@@ -782,7 +782,7 @@ float:left;
 top:0;
 margin:0px 10px;
 }
-#personalLife section blockquote+p+picture+p+blockquote+p+picture{
+#personalLife section blockquote+p+figure+p+blockquote+p+figure{
     float:left;
 }
 
@@ -1023,7 +1023,7 @@ height:300px;
         padding:0;
         margin-left: -2vw;
     }
-    #bookDisplay picture{
+    #bookDisplay figure{
 
         width:250px;
         padding:20px;
@@ -1045,17 +1045,18 @@ iframe{
         height: 25vw;
         max-width: 800px;
         max-height: 600px;
+        margin:auto;
     }
-    #personalLife section blockquote+p+picture+p+blockquote+p+figure{
+    #personalLife section blockquote+p+figure+p+blockquote+p+figure{
     top: 0;
     }
     #personalLife section+section{
         margin-top: 10vw;
     }
-    p+picture+p+p{
+    p+figure+p+p{
         margin-bottom: 10vw;
     }
-    #personalLife p+picture+p+p{
+    #personalLife p+figure+p+p{
         margin-bottom: auto;
     }
     #index #footerName {
