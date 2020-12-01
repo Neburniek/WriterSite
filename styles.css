@@ -757,6 +757,7 @@ body section p+picture +p+p{
     width: 95vw;
     display:inline-flex;
     flex-wrap: wrap;
+    margin:auto;
 
 }
 #bookDisplay section{
