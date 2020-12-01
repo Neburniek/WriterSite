@@ -198,6 +198,7 @@ figcaption{
 }
 
 #bookDisplay picture:hover{
+    border:10px solid red;
     animation: shake;
     animation-iteration-count: infinite;
 }
