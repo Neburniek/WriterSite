@@ -160,6 +160,7 @@ figcaption{
     background-position:expanded;
     background-repeat:no-repeat;
     animation-name: imageChanging;
+    overflow:visible;
     animation-duration:30s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -176,6 +177,8 @@ figcaption{
     background-repeat:no-repeat;
     animation-name: nonFictionChanging;
     animation-duration:15s;
+    overflow:visible;
+
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -188,6 +191,7 @@ figcaption{
     background-position:center;
     background-repeat:no-repeat;
     animation-name: fictionChanging;
+    overflow:visible;
     animation-duration:60s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
