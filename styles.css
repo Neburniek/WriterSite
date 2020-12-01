@@ -1020,7 +1020,8 @@ height:300px;
 @media (min-width:1200px){
 
     #bookDisplay{
-        padding:-8vw;
+        padding:0;
+        margin-left:-5vw;
     }
     #bookDisplay picture{
 
