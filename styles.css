@@ -2,6 +2,9 @@
 *{
     font-family: roboto;
 }
+html{
+    overflow-x: hidden;
+}
 
 /* General */
 body{
@@ -145,7 +148,7 @@ picture {
 }
 
 picture span{
-    margin:10px;
+    margin:5px;
     font-size:15px;
     line-height: 15px;
 }
