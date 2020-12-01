@@ -139,12 +139,14 @@ figure {
     text-align: center;
 }
 picture {
-    margin:0;
+    margin:20px;
     text-align: center;
+    display:grid;
 }
 
-figcaption{
-    font-size:2vw;
+picture span{
+    margin:10px;
+    font-size:15px;
     line-height: 15px;
 }
 
@@ -671,10 +673,6 @@ body section p+picture +p+p{
     height: 25rem;
 
 
-}
-figcaption{
-    font-size:10px;
-    padding:10px;
 }
 
 .mainImage{

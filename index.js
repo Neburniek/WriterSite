@@ -552,7 +552,7 @@ const  link= book.title.charAt(0).toLowerCase() + book.title.slice(1) .split(' '
      <h4>${book.title}</h4>
      <img src="${book.imgURL}" alt="${book.alt}" title="${book.alt}${book.title}" >
      </a>
-     <figcaption>
+     <span>
      Book publication year: ${book.year}
      <strong>Image Source: </strong> 
      <a class="external" href="${book.imgLink}">
@@ -562,7 +562,7 @@ const  link= book.title.charAt(0).toLowerCase() + book.title.slice(1) .split(' '
      <a class="external" href="${book.imgLicenseURL}">
      ${book.imgLicense}
      </a>
-     </figcaption>
+     </span>
     </picture>
   
   
@@ -598,7 +598,7 @@ function detailBook(bookList, bookSelector){
       <source media="(min-width:0px)" srcset="${book.imgURL}">
       <img  src="${book.imgMd}" alt="${book.alt}" title="${book.alt}${book.title}" >
       </a>
-      <figcaption>
+      <span>
       ${book.alt}
       <strong>Image Source: </strong> 
       <a class="external" href="${book.imgLink}">
@@ -608,7 +608,7 @@ function detailBook(bookList, bookSelector){
       <a class="external" href="${book.imgLicenseURL}">
       ${book.imgLicense}
       </a>
-      </figcaption>
+      </span>
      </picture>
     
       <p>By the pricking of my thumbs, But this denoted a foregone conclusion:  Yes, so please your Majesty. I did go between them, as I said; but more than that, he loved her-for indeed he was mad for her, and talk'd of Satan, and of Limbo, and of Furies, and I know not what.  Besides this nothing that he so plentifully gives me, the something that nature gave me his countenance seems to take from me.   A fool, a fool! I met a fool i' th' forest, A motley fool.  I must have liberty Withal, as large a charter as the wind, To blow on whom I please, for so fools have; And they that are most galled with my folly, They most must laugh.  Hast any philosophy in thee, shepherd?</p>
