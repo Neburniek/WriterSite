@@ -472,7 +472,19 @@ var nonFictionBookList = [{
 
 var mainTitle = document.getElementById("mainTitle");
 var h2Tag = document.getElementsByTagName("h2"); // mainTitle.textContent=h2Tag[0].textContent;
-// Header creation
+//parser youtube videos
+
+function init() {
+  var vidDefer = document.getElementsByTagName('iframe');
+
+  for (var i = 0; i < vidDefer.length; i++) {
+    if (vidDefer[i].getAttribute('data-src')) {
+      vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+    }
+  }
+}
+
+window.onload = init; // Header creation
 
 var bodyTag = document.getElementsByTagName("body");
 bodyTag[0].insertAdjacentHTML("afterbegin", "\n<header>\n        <nav>\n            <div id=\"title\">\n                <a href=\"./index.html\">\n                    <p>Fan site of</p>\n                    <h1>Chuck Palahniuk</h1> \n                    \n                    <img id=\"logoNav\" src=\"/logo.ec7bfaae.svg\" alt=\"Chuck Palahniuk Fan Site Logo\">\n               </a>\n                \n            </div>\n            <div id=\"nav-options\">\n                <ul>\n                    <li><a id=\"chuck\" href=\"./home.html\"> Home </a></li>\n                    <li><a id=\"personal\" href=\"./personalLife.html\"> Personal life </a></li>\n                    <li><a id=\"fictionBooks\" href=\"./fictionBooks.html\"> Fiction books </a></li>\n                    <li><a id=\"nonFiction\" href=\"./nonFiction.html\"> Non-fiction books </a></li>\n                </ul>\n            </div>\n        </nav> \n    </header>\n\n    \n\n"); // navbar selector
@@ -622,7 +634,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46343" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43323" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
