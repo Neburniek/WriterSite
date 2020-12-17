@@ -404,16 +404,6 @@ const h2Tag = document.getElementsByTagName("h2");
 // mainTitle.textContent=h2Tag[0].textContent;
 
 
-
-//parser youtube videos
-function init() {
-  var vidDefer = document.getElementsByTagName('iframe');
-  for (var i=0; i<vidDefer.length; i++) {
-  if(vidDefer[i].getAttribute('data-src')) {
-  vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-  } } }
-  window.onload = init;
-
 // Header creation
 
 const bodyTag = document.getElementsByTagName("body");
