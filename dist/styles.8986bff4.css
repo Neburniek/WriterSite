@@ -1,7 +1,20 @@
 /* Mobile version: */
+
+@font-face{
+    font-family: frijole;
+    src:url("/Frijole-Regular.69944f77.ttf");
+}
+@font-face{
+    font-family: roboto;
+    src:url("/Roboto-Regular.19d263ce.ttf");
+}
 *{
     font-family: roboto;
+    font-display: swap;
 }
+
+
+
 html{
     overflow-x: hidden;
 }
