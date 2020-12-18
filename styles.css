@@ -1,5 +1,18 @@
 /* Mobile version: */
 
+@font-face{
+    font-family: frijole;
+    src:url("./Frijole-Regular.ttf");
+    font-display: swap;
+
+}
+@font-face{
+    font-family: roboto;
+    src:url("./Roboto-Regular.ttf");
+    font-display: swap;
+
+}
+
 *{
     font-family: roboto;
     font-display: swap;
