@@ -3,10 +3,14 @@
 @font-face{
     font-family: frijole;
     src:url("/Frijole-Regular.69944f77.ttf");
+    font-display: swap;
+
 }
 @font-face{
     font-family: roboto;
     src:url("/Roboto-Regular.19d263ce.ttf");
+    font-display: swap;
+
 }
 *{
     font-family: roboto;
