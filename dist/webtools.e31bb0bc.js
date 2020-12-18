@@ -573,7 +573,7 @@ function detailBook(bookList, bookSelector) {
       }
 
       if (book.videoURL) {
-        bookDisplay.insertAdjacentHTML("beforeend", "\n        <section> \n            <figure>\n            <h3>".concat(book.videoTitle, "</h3>\n            <iframe src=\"").concat(book.videoURL, "\" title=\"").concat(book.videoCaption, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          </figure>\n          </section>\n        \n        "));
+        bookDisplay.insertAdjacentHTML("beforeend", "\n        <section> \n            <figure>\n            <h3>".concat(book.videoTitle, "</h3>\n            <iframe src=\"").concat(book.videoURL, "\"   srcdoc=\"<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=").concat(book.videoURL, "><img src=https://img.youtube.com/vi/").concat(book.videoURL.slice(30), "/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? \u2013 Wisecrack Edition'><span>\u25B6</span></a>\" title=\"").concat(book.videoCaption, "\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n            <figcaption>").concat(book.videoCaption, "</figcaption>\n          </figure>\n          </section>\n        \n        "));
       }
 
       if (_x === 0) {
@@ -622,7 +622,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35591" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41839" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -634,11 +634,12 @@ function detailBook(bookList, bookSelector){
       }
 
       if(book.videoURL){
+
         bookDisplay.insertAdjacentHTML("beforeend", `
         <section> 
             <figure>
             <h3>${book.videoTitle}</h3>
-            <iframe src="${book.videoURL}" title="${book.videoCaption}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="${book.videoURL}"   srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=${book.videoURL}><img src=https://img.youtube.com/vi/${book.videoURL.slice(30)}/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>" title="${book.videoCaption}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption>${book.videoCaption}</figcaption>
           </figure>
           </section>
